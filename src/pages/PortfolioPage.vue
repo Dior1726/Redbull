@@ -258,8 +258,14 @@
 .q-stepper {
   &::v-deep {
     .q-stepper__tab {
-      min-height: 70px;
-      padding: 20px 0 !important;
+      min-height: 60px;
+      padding: 10px 0 !important;
+    }
+    .q-stepper__step-inner {
+      padding: 12px;
+    }
+    .q-stepper__nav {
+      padding-left: 12px;
     }
   }
 }
