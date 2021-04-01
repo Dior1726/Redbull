@@ -39,9 +39,36 @@
 
                   <q-card>
                     <q-card-section>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-                      commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-                      eveniet doloribus ullam aliquid.
+                      <q-table
+                        dense
+                        flat
+                        separator="none"
+                        hide-bottom
+                        hide-header
+                        :data="data"
+                        :columns="columns"
+                        row-key="name"
+                      >
+                        <template v-slot:body="props">
+                          <q-tr :props="props">
+                            <q-td key="name" :props="props" :class="{'text-weight-medium':props.row.type == 'old'}">
+                              {{ props.row.name }}
+                            </q-td>
+
+                            <q-td key="amount" :props="props">
+                              <p v-if="props.row.type == 'income'" class="text-red">
+                                - {{ props.row.amount }}
+                              </p>
+                              <p v-else-if="props.row.type == 'outcome'" class="text-green">
+                                + {{ props.row.amount }}
+                              </p>
+                              <p v-else class="text-dark text-weight-medium">
+                                {{ props.row.amount }}
+                              </p>
+                            </q-td>
+                          </q-tr>
+                        </template>
+                      </q-table>
                     </q-card-section>
                   </q-card>
                 </q-expansion-item>
@@ -63,9 +90,36 @@
 
                   <q-card>
                     <q-card-section>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-                      commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-                      eveniet doloribus ullam aliquid.
+                      <q-table
+                        dense
+                        flat
+                        separator="none"
+                        hide-bottom
+                        hide-header
+                        :data="data"
+                        :columns="columns"
+                        row-key="name"
+                      >
+                        <template v-slot:body="props">
+                          <q-tr :props="props">
+                            <q-td key="name" :props="props" :class="{'text-weight-medium':props.row.type == 'old'}">
+                              {{ props.row.name }}
+                            </q-td>
+
+                            <q-td key="amount" :props="props">
+                              <p v-if="props.row.type == 'income'" class="text-red">
+                                - {{ props.row.amount }}
+                              </p>
+                              <p v-else-if="props.row.type == 'outcome'" class="text-green">
+                                + {{ props.row.amount }}
+                              </p>
+                              <p v-else class="text-dark text-weight-medium">
+                                {{ props.row.amount }}
+                              </p>
+                            </q-td>
+                          </q-tr>
+                        </template>
+                      </q-table>
                     </q-card-section>
                   </q-card>
                 </q-expansion-item>
@@ -92,9 +146,36 @@
 
                   <q-card>
                     <q-card-section>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-                      commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-                      eveniet doloribus ullam aliquid.
+                      <q-table
+                        dense
+                        flat
+                        separator="none"
+                        hide-bottom
+                        hide-header
+                        :data="data"
+                        :columns="columns"
+                        row-key="name"
+                      >
+                        <template v-slot:body="props">
+                          <q-tr :props="props">
+                            <q-td key="name" :props="props" :class="{'text-weight-medium':props.row.type == 'old'}">
+                              {{ props.row.name }}
+                            </q-td>
+
+                            <q-td key="amount" :props="props">
+                              <p v-if="props.row.type == 'income'" class="text-red">
+                                - {{ props.row.amount }}
+                              </p>
+                              <p v-else-if="props.row.type == 'outcome'" class="text-green">
+                                + {{ props.row.amount }}
+                              </p>
+                              <p v-else class="text-dark text-weight-medium">
+                                {{ props.row.amount }}
+                              </p>
+                            </q-td>
+                          </q-tr>
+                        </template>
+                      </q-table>
                     </q-card-section>
                   </q-card>
                 </q-expansion-item>
@@ -116,9 +197,36 @@
 
                   <q-card>
                     <q-card-section>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-                      commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-                      eveniet doloribus ullam aliquid.
+                      <q-table
+                        dense
+                        flat
+                        separator="none"
+                        hide-bottom
+                        hide-header
+                        :data="data"
+                        :columns="columns"
+                        row-key="name"
+                      >
+                        <template v-slot:body="props">
+                          <q-tr :props="props">
+                            <q-td key="name" :props="props" :class="{'text-weight-medium':props.row.type == 'old'}">
+                              {{ props.row.name }}
+                            </q-td>
+
+                            <q-td key="amount" :props="props">
+                              <p v-if="props.row.type == 'income'" class="text-red">
+                                - {{ props.row.amount }}
+                              </p>
+                              <p v-else-if="props.row.type == 'outcome'" class="text-green">
+                                + {{ props.row.amount }}
+                              </p>
+                              <p v-else class="text-dark text-weight-medium">
+                                {{ props.row.amount }}
+                              </p>
+                            </q-td>
+                          </q-tr>
+                        </template>
+                      </q-table>
                     </q-card-section>
                   </q-card>
                 </q-expansion-item>
@@ -143,7 +251,39 @@ import dataJson from 'src/static/data.json'
   export default {
     data: () => ({
       tab: 'report',
-      bi: dataJson
+      bi: dataJson,
+      columns: [
+        {
+          name: 'name',
+          required: true,
+          align: 'left',
+          field: row => row.name,
+          format: val => `${val}`,
+        },
+        { name: 'amount', align: 'right', field: 'amount',},
+      ],
+      data: [
+        {
+          name: 'Zerde',
+          amount: 2000,
+          type: 'income'
+        },
+        {
+          name: 'Dark',
+          amount: 2000,
+          type: 'outcome'
+        },
+        {
+          name: 'Darks',
+          amount: 2000,
+          type: 'outcome'
+        },
+        {
+          name: 'Before 7 day',
+          amount: 5000,
+          type: 'old'
+        }
+      ]
     }),
     mounted() {
 
@@ -158,6 +298,10 @@ import dataJson from 'src/static/data.json'
 </script>
 
 <style lang="scss" scoped>
+
+.q-table p {
+  margin: 0;
+}
 
 .q-expansion-item {
   border-top: 1px solid #e5e5e5;
