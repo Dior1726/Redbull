@@ -1,0 +1,21 @@
+// app global css in SCSS form
+
+.q-item.q-router-link--active, .q-item--active {
+    color: $accent;
+    font-weight: 500;
+    i {
+        color: $accent;
+    }
+}
+
+.bg-accent-light {
+    background-color: $accentdark;
+}
+
+.text-accent-light {
+    color: $accentdark;
+}
+
+main {
+    min-height: 100vh;
+}

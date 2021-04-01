@@ -1,0 +1,115 @@
+[
+    {
+        "company": "Geometry",
+        "cashbox": "Kaspi USD *9720",
+        "account": "Kaspi USD *9720",
+        "amount": " 160,000   "
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "Kaspi USD *9721",
+        "account": "ФОТ",
+        "amount": "-240,000"
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "Kaspi USD *9722",
+        "account": "Ремонт",
+        "amount": "-35,000"
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "Kaspi USD *9723",
+        "account": "Оплата Инвиктус",
+        "amount": " 150,000"
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "Kaspi USD *9724",
+        "account": "Оплата Болашак",
+        "amount": " 150,000   "
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "Kaspi USD *9725",
+        "account": "Баланс 7 дней назад",
+        "amount": " 135,000   "
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "BCC KZT *7890",
+        "account": "BCC KZT *7890",
+        "amount": " 85,005   "
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "BCC KZT *7891",
+        "account": "Налоги ФОТ",
+        "amount": "-8,875   "
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "BCC KZT *7892",
+        "account": "Услуги банка",
+        "amount": "-2,000   "
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "BCC KZT *7893",
+        "account": "Внутренний переток",
+        "amount": " 50,000   "
+    },
+    {
+        "company": "Geometry",
+        "cashbox": "BCC KZT *7894",
+        "account": "Баланс 7 дней назад",
+        "amount": " 45,880   "
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "Kaspi KZT *4536",
+        "account": "Kaspi KZT *4536",
+        "amount": " 16,554,160   "
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "Kaspi KZT *4536",
+        "account": "движений не было"
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "Kaspi KZT *4536",
+        "account": "Баланс 7 дней назад",
+        "amount": " 16,554,160   "
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "BCC KZT *7890",
+        "account": "BCC KZT *7890",
+        "amount": " 394,258   "
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "BCC KZT *7890",
+        "account": "Оплата ЦМЕР",
+        "amount": " 321,000   "
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "BCC KZT *7890",
+        "account": "Оплата Дарис",
+        "amount": " 123,000   "
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "BCC KZT *7890",
+        "account": "Внутренний переток",
+        "amount": "--50,000   "
+    },
+    {
+        "company": "Imonitor",
+        "cashbox": "BCC KZT *7890",
+        "account": "Баланс 7 дней назад",
+        "amount": " 258   "
+    }
+]
