@@ -44,7 +44,7 @@ const routes = [
       {
         path: "/step",
         component: () => import("src/pages/Home.vue"),
-        name: "Stepper"
+        name: "Some"
       },
       {
         path: "/report/:id",

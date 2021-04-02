@@ -22,10 +22,10 @@
 
             <!-- first company -->
             <div>
-              <div class="text-h6 q-my-sm">Company Name</div>
+              <div class="text-h6 q-my-sm">Team Name</div>
               <div>
                 <div @click="clickStep" class="flex justify-between items-center q-pt-sm border-top">
-                <div class="text-subtitle1">Tornado</div>
+                <div class="text-subtitle1">Project name</div>
                 <div class=" q-px-md text-grey-7 text-right" :class="{'translate':hide}">
                   <q-icon size="14px" class="fas fa-chevron-up"></q-icon>
                 </div>
@@ -106,25 +106,17 @@
                   Try out different ad text to see what brings in the most customers
                 </q-step>
 
-                <template v-slot:navigation>
+                <!-- <template  v-slot:navigation>
                   <q-stepper-navigation>
                     <q-btn v-show="group.length > 4" @click="$refs.stepper.next()" color="accent" :label="step === 4 ? 'Finish' : 'Continue'" />
                     <q-btn v-if="step > 1" flat color="accent" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
                   </q-stepper-navigation>
-                </template>
+                </template> -->
               </q-stepper>
               </div>
-            </div>
-
-            <div style="margin-left: -30px; margin-right: -30px;">
-              <q-separator size="10px" />
-            </div>
-
-            <!-- second company -->
-            <div>
-              <div class="text-h6 q-my-sm">Company Name</div>
-              <div @click="clickStep" class="flex justify-between items-center q-pt-sm border-top">
-                <div class="text-subtitle1">Tornado</div>
+              <div>
+                <div @click="clickStep" class="flex justify-between items-center q-pt-sm border-top">
+                <div class="text-subtitle1">Project name</div>
                 <div class=" q-px-md text-grey-7 text-right" :class="{'translate':hide}">
                   <q-icon size="14px" class="fas fa-chevron-up"></q-icon>
                 </div>
@@ -140,7 +132,8 @@
               >
                 <q-step
                   :name="1"
-                  title="5"
+                  title="aaa"
+                  caption="5"
                   icon="settings"
                   :done="step > 1"
                   :class="{'hidden':hide}"
@@ -204,13 +197,387 @@
                   Try out different ad text to see what brings in the most customers
                 </q-step>
 
-                <template v-slot:navigation>
+                <!-- <template  v-slot:navigation>
                   <q-stepper-navigation>
                     <q-btn v-show="group.length > 4" @click="$refs.stepper.next()" color="accent" :label="step === 4 ? 'Finish' : 'Continue'" />
                     <q-btn v-if="step > 1" flat color="accent" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
                   </q-stepper-navigation>
-                </template>
+                </template> -->
               </q-stepper>
+              </div>
+              <div>
+                <div @click="clickStep" class="flex justify-between items-center q-pt-sm border-top">
+                <div class="text-subtitle1">Project name</div>
+                <div class=" q-px-md text-grey-7 text-right" :class="{'translate':hide}">
+                  <q-icon size="14px" class="fas fa-chevron-up"></q-icon>
+                </div>
+              </div>
+              <q-stepper
+                flat
+                v-model="step"
+                ref="stepper"
+                alternative-labels
+                done-color="accent"
+                active-color="accent-light"
+                animated
+              >
+                <q-step
+                  :name="1"
+                  title="aaa"
+                  caption="5"
+                  icon="settings"
+                  :done="step > 1"
+                  :class="{'hidden':hide}"
+                >
+                  <q-option-group
+                    :options="options"
+                    label="2"
+                    type="checkbox"
+                    v-model="group"
+                    disable
+                    color="accent"
+                  />
+                </q-step>
+
+                <q-step
+                  :name="2"
+                  title="1"
+                  icon="create_new_folder"
+                  :done="step > 2"
+                  :class="{'hidden':hide}"
+                >
+                  An ad group contains one or more a
+                </q-step>
+
+                <q-step
+                  :name="3"
+                  title="4"
+                  icon="fas fa-times"
+                  :done="step > 3"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="4"
+                  title="5"
+                  icon="mail"
+                  :done="step > 4"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="5"
+                  title="1"
+                  icon="settings"
+                  :done="step > 5"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="6"
+                  title="2"
+                  :class="{'hidden':hide}"
+                  icon="message"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <!-- <template  v-slot:navigation>
+                  <q-stepper-navigation>
+                    <q-btn v-show="group.length > 4" @click="$refs.stepper.next()" color="accent" :label="step === 4 ? 'Finish' : 'Continue'" />
+                    <q-btn v-if="step > 1" flat color="accent" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
+                  </q-stepper-navigation>
+                </template> -->
+              </q-stepper>
+              </div>
+            </div>
+
+            <div style="margin-left: -30px; margin-right: -30px;">
+              <q-separator size="10px" />
+            </div>
+
+            <!-- second company -->
+            <div>
+              <div class="text-h6 q-my-sm">Team Name</div>
+              <div>
+                <div @click="clickStep" class="flex justify-between items-center q-pt-sm border-top">
+                <div class="text-subtitle1">Project name</div>
+                <div class=" q-px-md text-grey-7 text-right" :class="{'translate':hide}">
+                  <q-icon size="14px" class="fas fa-chevron-up"></q-icon>
+                </div>
+              </div>
+              <q-stepper
+                flat
+                v-model="step"
+                ref="stepper"
+                alternative-labels
+                done-color="accent"
+                active-color="accent-light"
+                animated
+              >
+                <q-step
+                  :name="1"
+                  title="aaa"
+                  caption="5"
+                  icon="settings"
+                  :done="step > 1"
+                  :class="{'hidden':hide}"
+                >
+                  <q-option-group
+                    :options="options"
+                    label="2"
+                    type="checkbox"
+                    v-model="group"
+                    disable
+                    color="accent"
+                  />
+                </q-step>
+
+                <q-step
+                  :name="2"
+                  title="1"
+                  icon="create_new_folder"
+                  :done="step > 2"
+                  :class="{'hidden':hide}"
+                >
+                  An ad group contains one or more a
+                </q-step>
+
+                <q-step
+                  :name="3"
+                  title="4"
+                  icon="fas fa-times"
+                  :done="step > 3"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="4"
+                  title="5"
+                  icon="mail"
+                  :done="step > 4"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="5"
+                  title="1"
+                  icon="settings"
+                  :done="step > 5"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="6"
+                  title="2"
+                  :class="{'hidden':hide}"
+                  icon="message"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <!-- <template  v-slot:navigation>
+                  <q-stepper-navigation>
+                    <q-btn v-show="group.length > 4" @click="$refs.stepper.next()" color="accent" :label="step === 4 ? 'Finish' : 'Continue'" />
+                    <q-btn v-if="step > 1" flat color="accent" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
+                  </q-stepper-navigation>
+                </template> -->
+              </q-stepper>
+              </div>
+              <div>
+                <div @click="clickStep" class="flex justify-between items-center q-pt-sm border-top">
+                <div class="text-subtitle1">Project name</div>
+                <div class=" q-px-md text-grey-7 text-right" :class="{'translate':hide}">
+                  <q-icon size="14px" class="fas fa-chevron-up"></q-icon>
+                </div>
+              </div>
+              <q-stepper
+                flat
+                v-model="step"
+                ref="stepper"
+                alternative-labels
+                done-color="accent"
+                active-color="accent-light"
+                animated
+              >
+                <q-step
+                  :name="1"
+                  title="aaa"
+                  caption="5"
+                  icon="settings"
+                  :done="step > 1"
+                  :class="{'hidden':hide}"
+                >
+                  <q-option-group
+                    :options="options"
+                    label="2"
+                    type="checkbox"
+                    v-model="group"
+                    disable
+                    color="accent"
+                  />
+                </q-step>
+
+                <q-step
+                  :name="2"
+                  title="1"
+                  icon="create_new_folder"
+                  :done="step > 2"
+                  :class="{'hidden':hide}"
+                >
+                  An ad group contains one or more a
+                </q-step>
+
+                <q-step
+                  :name="3"
+                  title="4"
+                  icon="fas fa-times"
+                  :done="step > 3"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="4"
+                  title="5"
+                  icon="mail"
+                  :done="step > 4"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="5"
+                  title="1"
+                  icon="settings"
+                  :done="step > 5"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="6"
+                  title="2"
+                  :class="{'hidden':hide}"
+                  icon="message"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <!-- <template  v-slot:navigation>
+                  <q-stepper-navigation>
+                    <q-btn v-show="group.length > 4" @click="$refs.stepper.next()" color="accent" :label="step === 4 ? 'Finish' : 'Continue'" />
+                    <q-btn v-if="step > 1" flat color="accent" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
+                  </q-stepper-navigation>
+                </template> -->
+              </q-stepper>
+              </div>
+              <div>
+                <div @click="clickStep" class="flex justify-between items-center q-pt-sm border-top">
+                <div class="text-subtitle1">Project name</div>
+                <div class=" q-px-md text-grey-7 text-right" :class="{'translate':hide}">
+                  <q-icon size="14px" class="fas fa-chevron-up"></q-icon>
+                </div>
+              </div>
+              <q-stepper
+                flat
+                v-model="step"
+                ref="stepper"
+                alternative-labels
+                done-color="accent"
+                active-color="accent-light"
+                animated
+              >
+                <q-step
+                  :name="1"
+                  title="aaa"
+                  caption="5"
+                  icon="settings"
+                  :done="step > 1"
+                  :class="{'hidden':hide}"
+                >
+                  <q-option-group
+                    :options="options"
+                    label="2"
+                    type="checkbox"
+                    v-model="group"
+                    disable
+                    color="accent"
+                  />
+                </q-step>
+
+                <q-step
+                  :name="2"
+                  title="1"
+                  icon="create_new_folder"
+                  :done="step > 2"
+                  :class="{'hidden':hide}"
+                >
+                  An ad group contains one or more a
+                </q-step>
+
+                <q-step
+                  :name="3"
+                  title="4"
+                  icon="fas fa-times"
+                  :done="step > 3"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="4"
+                  title="5"
+                  icon="mail"
+                  :done="step > 4"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="5"
+                  title="1"
+                  icon="settings"
+                  :done="step > 5"
+                  :class="{'hidden':hide}"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <q-step
+                  :name="6"
+                  title="2"
+                  :class="{'hidden':hide}"
+                  icon="message"
+                >
+                  Try out different ad text to see what brings in the most customers
+                </q-step>
+
+                <!-- <template  v-slot:navigation>
+                  <q-stepper-navigation>
+                    <q-btn v-show="group.length > 4" @click="$refs.stepper.next()" color="accent" :label="step === 4 ? 'Finish' : 'Continue'" />
+                    <q-btn v-if="step > 1" flat color="accent" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
+                  </q-stepper-navigation>
+                </template> -->
+              </q-stepper>
+              </div>
             </div>
           </q-tab-panel>
 
@@ -230,7 +597,7 @@
       tab: 'report',
       hide: false,
       step: 1,
-      group: ['bat', 'friend', 'upload', 'up', 'pd'],
+      group: ['bat', 'friend', 'upload'],
       options: [
         { label: 'Battery too low', value: 'bat' },
         { label: 'Friend request', value: 'friend', },

@@ -72,7 +72,7 @@
           <q-item-section >Profile</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/report">
+        <q-item clickable v-ripple to="/step">
           <q-item-section avatar>
             <q-avatar text-color="grey-5" icon="far fa-chart-bar" />
           </q-item-section>
@@ -140,6 +140,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.q-toolbar__title {
+  padding: 0;
+}
 .q-item {
   padding: 8px 4px;
 }

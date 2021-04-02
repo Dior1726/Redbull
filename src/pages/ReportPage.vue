@@ -1,15 +1,33 @@
 <template>
   <q-page class="q-pa-md">
+
+    <q-card class="my-card q-mb-md bg-accent text-white">
+      <q-card-section horizontal class="flex justify-around items-center q-pt-md">
+        <q-card-section class="q-pt-xs">
+          <div class="text-h5 q-mt-sm q-mb-xs">
+            Приветственный текст
+          </div>
+        </q-card-section>
+
+        <q-card-section class="col-4 flex flex-center ">
+          <q-img src="~/assets/icons/homepage.svg" />
+        </q-card-section>
+      </q-card-section>
+    </q-card>
+
     <div class="row justify-between q-gutter-md">
       <router-link
         tag="div" 
-        class="my-card q-card"
+        class="my-card q-card bg-purple-2"
         v-for="item in arr"
         :key="item.id"
         :to="{name: item.to}"
       >
           <q-badge v-if="item.newMessage" color="orange" floating />
-        <q-card-section class="absolute-center text-h6 text-grey-8">
+        <q-card-section class="flex items-center justify-center column text-h6 text-grey-8 full-height">
+          <div class="bg-white card-round" >
+            <q-icon class="fas fa-home" color="purple-7" />
+          </div>
           {{item.title}}
         </q-card-section>
       </router-link>
@@ -85,5 +103,10 @@ export default {
   border-radius: 10px !important;
   top: 10px;
   right: 10px;
+}
+
+.card-round {
+  padding: 10px 15px;
+  border-radius: 50%;
 }
 </style>
