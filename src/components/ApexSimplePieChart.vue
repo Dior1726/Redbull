@@ -7,7 +7,7 @@ export default {
   name: 'ApexSimplePieChart',
   data () {
     return {
-      series: [44, 55, 13,],
+      series: [44, 55, 13, 50],
       chartOptions: {
         chart: {
           type: 'pie',
@@ -17,12 +17,12 @@ export default {
         },
         title: {
           text: 'Pie',
-          align: 'center',
+          align: 'left',
           style: {
             color: '#FFF'
           }
         },
-        labels: ['Team A', 'Team B', 'Team C',],
+        labels: ['Team A', 'Team B', 'Team C', "Team D"],
         responsive: [{
           breakpoint: 480,
           options: {

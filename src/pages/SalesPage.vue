@@ -30,7 +30,7 @@
 
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <card-base>
-                  <apex-column-with-data-labels />
+                  <apex-stacked-columns-100 />
                 </card-base>
               </div>
 
@@ -48,15 +48,15 @@
 
 <script>
 import CardBase from 'components/CardBase'
-import ApexColumnWithDataLabels from 'src/components/ApexColumnWithDataLabels.vue'
 
   export default {
     data: () => ({
       tab: 'graphics'
     }),
     components: {
-      CardBase, ApexColumnWithDataLabels,
-      ApexSimplePieChart: () => import('components/ApexSimplePieChart')
+      CardBase,
+      ApexSimplePieChart: () => import('components/ApexSimplePieChart'),
+      ApexStackedColumns100: () => import('components/ApexStackedColumns100')
     }
   }
 </script>
