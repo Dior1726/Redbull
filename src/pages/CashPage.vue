@@ -246,7 +246,7 @@
 </template>
 
 <script>
-import dataJson from 'src/static/data.json'
+import dataJson from 'src/static/cash.json'
 
   export default {
     data: () => ({

@@ -1,0 +1,362 @@
+[
+    {
+        "year": "2020",
+        "month": "янв",
+        "team": "Taycan",
+        "amount": "794000"
+    },
+    {
+        "year": "2020",
+        "month": "фев",
+        "team": "Taycan",
+        "amount": "668000"
+    },
+    {
+        "year": "2020",
+        "month": "мар",
+        "team": "Taycan",
+        "amount": "744000"
+    },
+    {
+        "year": "2020",
+        "month": "апр",
+        "team": "Taycan",
+        "amount": "981000"
+    },
+    {
+        "year": "2020",
+        "month": "май",
+        "team": "Taycan",
+        "amount": "609000"
+    },
+    {
+        "year": "2020",
+        "month": "июн",
+        "team": "Taycan",
+        "amount": "508000"
+    },
+    {
+        "year": "2020",
+        "month": "июл",
+        "team": "Taycan",
+        "amount": "871000"
+    },
+    {
+        "year": "2020",
+        "month": "авг",
+        "team": "Taycan",
+        "amount": "745000"
+    },
+    {
+        "year": "2020",
+        "month": "сен",
+        "team": "Taycan",
+        "amount": "913000"
+    },
+    {
+        "year": "2020",
+        "month": "окт",
+        "team": "Taycan",
+        "amount": "707000"
+    },
+    {
+        "year": "2020",
+        "month": "ноя",
+        "team": "Taycan",
+        "amount": "655000"
+    },
+    {
+        "year": "2020",
+        "month": "дек",
+        "team": "Taycan",
+        "amount": "514000"
+    },
+    {
+        "year": "2021",
+        "month": "янв",
+        "team": "Taycan",
+        "amount": "878000"
+    },
+    {
+        "year": "2021",
+        "month": "фев",
+        "team": "Taycan",
+        "amount": "868000"
+    },
+    {
+        "year": "2021",
+        "month": "мар",
+        "team": "Taycan",
+        "amount": "877000"
+    },
+    {
+        "year": "2020",
+        "month": "янв",
+        "team": "Tornado",
+        "amount": "692000"
+    },
+    {
+        "year": "2020",
+        "month": "фев",
+        "team": "Tornado",
+        "amount": "722000"
+    },
+    {
+        "year": "2020",
+        "month": "мар",
+        "team": "Tornado",
+        "amount": "785000"
+    },
+    {
+        "year": "2020",
+        "month": "апр",
+        "team": "Tornado",
+        "amount": "638000"
+    },
+    {
+        "year": "2020",
+        "month": "май",
+        "team": "Tornado",
+        "amount": "796000"
+    },
+    {
+        "year": "2020",
+        "month": "июн",
+        "team": "Tornado",
+        "amount": "831000"
+    },
+    {
+        "year": "2020",
+        "month": "июл",
+        "team": "Tornado",
+        "amount": "727000"
+    },
+    {
+        "year": "2020",
+        "month": "авг",
+        "team": "Tornado",
+        "amount": "604000"
+    },
+    {
+        "year": "2020",
+        "month": "сен",
+        "team": "Tornado",
+        "amount": "757000"
+    },
+    {
+        "year": "2020",
+        "month": "окт",
+        "team": "Tornado",
+        "amount": "972000"
+    },
+    {
+        "year": "2020",
+        "month": "ноя",
+        "team": "Tornado",
+        "amount": "736000"
+    },
+    {
+        "year": "2020",
+        "month": "дек",
+        "team": "Tornado",
+        "amount": "683000"
+    },
+    {
+        "year": "2021",
+        "month": "янв",
+        "team": "Tornado",
+        "amount": "984000"
+    },
+    {
+        "year": "2021",
+        "month": "фев",
+        "team": "Tornado",
+        "amount": "737000"
+    },
+    {
+        "year": "2021",
+        "month": "мар",
+        "team": "Tornado",
+        "amount": "807000"
+    },
+    {
+        "year": "2020",
+        "month": "янв",
+        "team": "South Park",
+        "amount": "525000"
+    },
+    {
+        "year": "2020",
+        "month": "фев",
+        "team": "South Park",
+        "amount": "663000"
+    },
+    {
+        "year": "2020",
+        "month": "мар",
+        "team": "South Park",
+        "amount": "937000"
+    },
+    {
+        "year": "2020",
+        "month": "апр",
+        "team": "South Park",
+        "amount": "761000"
+    },
+    {
+        "year": "2020",
+        "month": "май",
+        "team": "South Park",
+        "amount": "822000"
+    },
+    {
+        "year": "2020",
+        "month": "июн",
+        "team": "South Park",
+        "amount": "506000"
+    },
+    {
+        "year": "2020",
+        "month": "июл",
+        "team": "South Park",
+        "amount": "642000"
+    },
+    {
+        "year": "2020",
+        "month": "авг",
+        "team": "South Park",
+        "amount": "857000"
+    },
+    {
+        "year": "2020",
+        "month": "сен",
+        "team": "South Park",
+        "amount": "749000"
+    },
+    {
+        "year": "2020",
+        "month": "окт",
+        "team": "South Park",
+        "amount": "847000"
+    },
+    {
+        "year": "2020",
+        "month": "ноя",
+        "team": "South Park",
+        "amount": "632000"
+    },
+    {
+        "year": "2020",
+        "month": "дек",
+        "team": "South Park",
+        "amount": "559000"
+    },
+    {
+        "year": "2021",
+        "month": "янв",
+        "team": "South Park",
+        "amount": "673000"
+    },
+    {
+        "year": "2021",
+        "month": "фев",
+        "team": "South Park",
+        "amount": "870000"
+    },
+    {
+        "year": "2021",
+        "month": "мар",
+        "team": "South Park",
+        "amount": "839000"
+    },
+    {
+        "year": "2020",
+        "month": "янв",
+        "team": "Yerlan’s team",
+        "amount": "704000"
+    },
+    {
+        "year": "2020",
+        "month": "фев",
+        "team": "Yerlan’s team",
+        "amount": "802000"
+    },
+    {
+        "year": "2020",
+        "month": "мар",
+        "team": "Yerlan’s team",
+        "amount": "821000"
+    },
+    {
+        "year": "2020",
+        "month": "апр",
+        "team": "Yerlan’s team",
+        "amount": "964000"
+    },
+    {
+        "year": "2020",
+        "month": "май",
+        "team": "Yerlan’s team",
+        "amount": "888000"
+    },
+    {
+        "year": "2020",
+        "month": "июн",
+        "team": "Yerlan’s team",
+        "amount": "665000"
+    },
+    {
+        "year": "2020",
+        "month": "июл",
+        "team": "Yerlan’s team",
+        "amount": "829000"
+    },
+    {
+        "year": "2020",
+        "month": "авг",
+        "team": "Yerlan’s team",
+        "amount": "639000"
+    },
+    {
+        "year": "2020",
+        "month": "сен",
+        "team": "Yerlan’s team",
+        "amount": "858000"
+    },
+    {
+        "year": "2020",
+        "month": "окт",
+        "team": "Yerlan’s team",
+        "amount": "776000"
+    },
+    {
+        "year": "2020",
+        "month": "ноя",
+        "team": "Yerlan’s team",
+        "amount": "954000"
+    },
+    {
+        "year": "2020",
+        "month": "дек",
+        "team": "Yerlan’s team",
+        "amount": "822000"
+    },
+    {
+        "year": "2021",
+        "month": "янв",
+        "team": "Yerlan’s team",
+        "amount": "953000"
+    },
+    {
+        "year": "2021",
+        "month": "фев",
+        "team": "Yerlan’s team",
+        "amount": "680000"
+    },
+    {
+        "year": "2021",
+        "month": "мар",
+        "team": "Yerlan’s team",
+        "amount": "518000"
+    }
+]

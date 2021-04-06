@@ -1,0 +1,191 @@
+[
+    {
+        "team": "Taycan",
+        "project": "Nova",
+        "stage": "Анализ и планирование",
+        "step": "Определение требований к отчетам",
+        "is_done": "1",
+        "days": "10",
+        "start_date": "12/1/20"
+    },
+    {
+        "team": "Taycan",
+        "project": "Nova",
+        "stage": "Анализ и планирование",
+        "step": "Диагностика текущей IT-инфраструктуры",
+        "is_done": "1",
+        "days": "15",
+        "start_date": "12/1/20"
+    },
+    {
+        "team": "Taycan",
+        "project": "Nova",
+        "stage": "Моделирование",
+        "step": "Моделирование данных",
+        "is_done": "1",
+        "days": "15",
+        "start_date": "12/26/20"
+    },
+    {
+        "team": "Taycan",
+        "project": "Nova",
+        "stage": "Моделирование",
+        "step": "Разработка макетов визуализации",
+        "is_done": "1",
+        "days": "30",
+        "start_date": "12/26/20"
+    },
+    {
+        "team": "Taycan",
+        "project": "Nova",
+        "stage": "Разработка и запуск",
+        "step": "Разработка процессов ETL",
+        "is_done": "1",
+        "days": "40",
+        "start_date": "2/9/21"
+    },
+    {
+        "team": "Taycan",
+        "project": "Nova",
+        "stage": "Разработка и запуск",
+        "step": "Разработка дашбордов",
+        "is_done": "0",
+        "days": "10",
+        "start_date": "2/9/21"
+    },
+    {
+        "team": "Taycan",
+        "project": "Nova",
+        "stage": "Разработка и запуск",
+        "step": "Тестирование и запуск",
+        "is_done": "0",
+        "days": "5",
+        "start_date": "2/9/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "DAMU",
+        "stage": "Анализ и планирование",
+        "step": "Архитектура системы",
+        "is_done": "1",
+        "days": "14",
+        "start_date": "2/1/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "DAMU",
+        "stage": "Анализ и планирование",
+        "step": "План проекта",
+        "is_done": "1",
+        "days": "3",
+        "start_date": "2/1/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "DAMU",
+        "stage": "Интеграция",
+        "step": "Получение данных из СЭД Документолог",
+        "is_done": "1",
+        "days": "4",
+        "start_date": "2/18/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "DAMU",
+        "stage": "Интеграция",
+        "step": "Получение данных из bpm online sales",
+        "is_done": "1",
+        "days": "14",
+        "start_date": "2/18/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "DAMU",
+        "stage": "Интеграция",
+        "step": "Получение данных из excel",
+        "is_done": "1",
+        "days": "1",
+        "start_date": "2/18/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "DAMU",
+        "stage": "Хранилище данных",
+        "step": "Организация ХД",
+        "is_done": "0",
+        "days": "5",
+        "start_date": "3/9/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "Samruk",
+        "stage": "Анализ и планирование",
+        "step": "Архитектура системы",
+        "is_done": "1",
+        "days": "14",
+        "start_date": "12/15/20"
+    },
+    {
+        "team": "Aidos",
+        "project": "Samruk",
+        "stage": "Анализ и планирование",
+        "step": "План проекта",
+        "is_done": "1",
+        "days": "3",
+        "start_date": "12/15/20"
+    },
+    {
+        "team": "Aidos",
+        "project": "Samruk",
+        "stage": "Интеграция",
+        "step": "Получение данных из АСКУЭ",
+        "is_done": "1",
+        "days": "10",
+        "start_date": "1/1/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "Samruk",
+        "stage": "Интеграция",
+        "step": "Получение данных из АЛСЕКО",
+        "is_done": "1",
+        "days": "12",
+        "start_date": "1/1/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "Samruk",
+        "stage": "Хранилище данных",
+        "step": "Организация ХД",
+        "is_done": "1",
+        "days": "25",
+        "start_date": "1/23/21"
+    },
+    {
+        "team": "Aidos",
+        "project": "Samruk",
+        "stage": "RESTful-сервис",
+        "step": "Реализация интеграции ХД для выгрузки информации",
+        "is_done": "0",
+        "days": "4",
+        "start_date": "2/17/21"
+    },
+    {
+        "team": "Taycan",
+        "project": "Bbnura",
+        "stage": "Анализ и планирование",
+        "step": "Определение требований к отчетам",
+        "is_done": "1",
+        "days": "3",
+        "start_date": "3/25/21"
+    },
+    {
+        "team": "Taycan",
+        "project": "Bbnura",
+        "stage": "Анализ и планирование",
+        "step": "Диагностика текущей IT-инфраструктуры",
+        "is_done": "0",
+        "days": "1",
+        "start_date": "3/25/21"
+    }
+]

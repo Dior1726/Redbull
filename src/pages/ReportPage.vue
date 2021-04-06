@@ -18,7 +18,7 @@
     <div class="row justify-between q-gutter-md">
       <router-link
         tag="div" 
-        class="my-card q-card bg-purple-2"
+        class="my-card q-card"
         v-for="item in arr"
         :key="item.id"
         :to="{name: item.to}"

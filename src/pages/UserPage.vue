@@ -78,8 +78,109 @@
       </q-tab-panel>
 
       <q-tab-panel name="b">
-        <div class="text-h6">Team</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <q-list separator>
+          <q-item-label header>Curator</q-item-label>
+          <q-item clickable v-ripple>
+            <q-item-section avatar top>
+              <q-avatar color="primary" text-color="white">
+                <img src="https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg" alt="">
+              </q-avatar>
+            </q-item-section>
+
+            <q-item-section>
+              <q-item-label lines="1">Yerlan Adylkhanov</q-item-label>
+              <q-item-label caption>Curator, Geometry</q-item-label>
+            </q-item-section>
+          </q-item>
+        </q-list>
+
+        <q-list separator>
+          <q-item-label header>Company A members</q-item-label>
+          
+          <q-item clickable v-ripple>
+            <q-item-section avatar top>
+              <q-avatar color="primary" text-color="white">
+                <img src="https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg" alt="">
+              </q-avatar>
+            </q-item-section>
+
+            <q-item-section>
+              <q-item-label lines="1">Galym Baibekov</q-item-label>
+              <q-item-label caption>BI analyst</q-item-label>
+            </q-item-section>
+
+            <q-item-section avatar>
+              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section avatar top>
+              <q-avatar color="primary" text-color="white">
+                <img src="https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg" alt="">
+              </q-avatar>
+            </q-item-section>
+
+            <q-item-section>
+              <q-item-label lines="1">Aidos Utebaev</q-item-label>
+              <q-item-label caption>BI analyst, financer</q-item-label>
+            </q-item-section>
+
+            <q-item-section avatar>
+              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section class="text-center">
+              + Add a member
+            </q-item-section>
+          </q-item>
+        </q-list>
+
+        <q-list separator>
+          <q-item-label header>Company B members</q-item-label>
+          
+          <q-item clickable v-ripple>
+            <q-item-section avatar top>
+              <q-avatar color="primary" text-color="white">
+                <img src="https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg" alt="">
+              </q-avatar>
+            </q-item-section>
+
+            <q-item-section>
+              <q-item-label lines="1">Galym Baibekov</q-item-label>
+              <q-item-label caption>BI analyst</q-item-label>
+            </q-item-section>
+
+            <q-item-section avatar>
+              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section avatar top>
+              <q-avatar color="primary" text-color="white">
+                <img src="https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg" alt="">
+              </q-avatar>
+            </q-item-section>
+
+            <q-item-section>
+              <q-item-label lines="1">Aidos Utebaev</q-item-label>
+              <q-item-label caption>BI analyst, financer</q-item-label>
+            </q-item-section>
+
+            <q-item-section avatar>
+              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable v-ripple>
+            <q-item-section class="text-center">
+              + Add a member
+            </q-item-section>
+          </q-item>
+        </q-list>
       </q-tab-panel>
     </q-tab-panels>
   </q-page>
@@ -95,20 +196,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-// .q-list {
-//   .q-expansion-item {
-//     border-bottom: 1px solid #eee;
-//   }
-//   &::v-deep {
-//     .q-expansion-item__container .q-item {
-//       padding: 8px 0px;
-//     }
-//     .q-expansion-item__container .q-card__section {
-//       padding: 8px 0px;
-//     }
-//   }
-// }
-
-
+.border-bottom {
+  border-bottom: 1px solid #eee;
+}
 </style>

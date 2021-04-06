@@ -11,6 +11,8 @@
         <q-toolbar-title class="absolute-center">
           {{this.$route.name}}
         </q-toolbar-title>
+        <q-space/>
+        <q-btn v-if="this.$route.name == 'Profile'" flat icon="fas fa-edit" size="sm" />
       </q-toolbar>
     </q-header>
 

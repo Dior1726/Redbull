@@ -619,7 +619,7 @@
 
 <style lang="scss" scoped>
 .border-top {
-    border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .q-stepper {
