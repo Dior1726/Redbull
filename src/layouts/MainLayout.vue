@@ -12,7 +12,7 @@
           {{this.$route.name}}
         </q-toolbar-title>
         <q-space/>
-        <q-btn v-if="this.$route.name == 'Profile'" flat icon="fas fa-edit" size="sm" />
+        <q-btn v-if="this.$route.name == 'Profile'" flat class="bg-accent-light" icon="uil-pen" size="md" />
       </q-toolbar>
     </q-header>
 
@@ -101,25 +101,25 @@
       <q-list class="flex justify-between">
         <q-item clickable v-ripple to="/" exact>
           <q-item-section avatar>
-            <q-avatar size="md" text-color="grey-5" icon="fas fa-home" />
+            <q-avatar size="xl" text-color="grey-5" icon="uil-chart-bar" />
           </q-item-section>
         </q-item>
 
         <q-item clickable v-ripple to="/step">
           <q-item-section avatar>
-            <q-avatar size="md" text-color="grey-5" icon="far fa-chart-bar" />
+            <q-avatar size="xl" text-color="grey-5" icon="uil-comment-lines" />
           </q-item-section>
         </q-item>
 
         <q-item clickable v-ripple to="/list">
           <q-item-section avatar>
-            <q-avatar size="md" text-color="grey-5" icon="fas fa-list" />
+            <q-avatar size="xl" text-color="grey-5" icon="uil-cube" />
           </q-item-section>
         </q-item>
 
         <q-item clickable v-ripple to="/user">
           <q-item-section avatar>
-            <q-avatar size="md" text-color="grey-5" icon="fas fa-user" />
+            <q-avatar size="xl" text-color="grey-5" icon="uil-user-circle" />
           </q-item-section>
         </q-item>
       </q-list>

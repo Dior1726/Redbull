@@ -26,7 +26,7 @@
           <q-badge v-if="item.newMessage" color="orange" floating />
         <q-card-section class="flex items-center justify-center column text-h6 text-grey-8 full-height">
           <div class="bg-white card-round" >
-            <q-icon class="fas fa-home" color="purple-7" />
+            <q-icon :class="item.icon" size="md" color="accent" />
           </div>
           {{item.title}}
         </q-card-section>
@@ -64,23 +64,27 @@ export default {
           title: 'Portfolio',
           id: 1,
           newMessage: true,
-          to: 'Portfolio'
+          to: 'Portfolio',
+          icon: "uil-briefcase"
         },
         {
           title: 'Cash',
           id: 2,
-          to: 'Cash'
+          to: 'Cash',
+          icon: "uil-dollar-alt"
         },
         {
           title: 'Sales',
           id: 3,
-          to: 'Sales'
+          to: 'Sales',
+          icon: "uil-arrow-growth"
         },
         {
           title: 'Leads',
           id: 4,
           newMessage: true,
-          to: 'Leads'
+          to: 'Leads',
+          icon: "uil-smile"
         }
       ]
     }
@@ -106,7 +110,7 @@ export default {
 }
 
 .card-round {
-  padding: 10px 15px;
+  padding: 10px 12px;
   border-radius: 50%;
 }
 </style>

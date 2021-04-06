@@ -1,0 +1,206 @@
+[
+    {
+        "id": 1,
+        "name": "Geometry",
+        "cashboxex": [
+            {
+                "id": 1,
+                "name": "Kaspi USD *9720",
+                "amount": 15000,
+                "discharge": [
+                    {
+                        "id": 1,
+                        "name": "Ремонт",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 2,
+                        "name": "оплата",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 3,
+                        "name": "Куплено",
+                        "type": "income",
+                        "amount": "50000" 
+                    },
+                    {
+                        "id": 4,
+                        "name": "7 days before",
+                        "type": "old",
+                        "amount": "5000" 
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "BCC KZT *7890",
+                "amount": 2000,
+                "discharge": [
+                    {
+                        "id": 1,
+                        "name": "Ремонт",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 2,
+                        "name": "оплата",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 3,
+                        "name": "Куплено",
+                        "type": "income",
+                        "amount": "50000" 
+                    },
+                    {
+                        "id": 4,
+                        "name": "7 days before",
+                        "type": "old",
+                        "amount": "5000" 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Imonitor",
+        "cashboxex": [
+            {
+                "id": 1,
+                "name": "Kaspi USD *8820",
+                "amount": 20000,
+                "discharge": [
+                    {
+                        "id": 1,
+                        "name": "Ремонт",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 2,
+                        "name": "оплата",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 3,
+                        "name": "Куплено",
+                        "type": "income",
+                        "amount": "50000" 
+                    },
+                    {
+                        "id": 4,
+                        "name": "7 days before",
+                        "type": "old",
+                        "amount": "5000" 
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "BCC KZT *5550",
+                "amount": 80000,
+                "discharge": [
+                    {
+                        "id": 1,
+                        "name": "Ремонт",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 2,
+                        "name": "оплата",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 3,
+                        "name": "Куплено",
+                        "type": "income",
+                        "amount": "50000" 
+                    },
+                    {
+                        "id": 4,
+                        "name": "7 days before",
+                        "type": "old",
+                        "amount": "5000" 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "ANother",
+        "cashboxex": [
+            {
+                "id": 1,
+                "name": "Kaspi USD *8820",
+                "amount": 1000,
+                "discharge": [
+                    {
+                        "id": 1,
+                        "name": "Ремонт",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 2,
+                        "name": "оплата",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 3,
+                        "name": "Куплено",
+                        "type": "income",
+                        "amount": "50000" 
+                    },
+                    {
+                        "id": 4,
+                        "name": "7 days before",
+                        "type": "old",
+                        "amount": "5000" 
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "BCC KZT *5550",
+                "amount": 900,
+                "discharge": [
+                    {
+                        "id": 1,
+                        "name": "Ремонт",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 2,
+                        "name": "оплата",
+                        "type": "outcome",
+                        "amount": "5000" 
+                    },
+                    {
+                        "id": 3,
+                        "name": "Куплено",
+                        "type": "income",
+                        "amount": "50000" 
+                    },
+                    {
+                        "id": 4,
+                        "name": "7 days before",
+                        "type": "old",
+                        "amount": "5000" 
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -20,20 +20,20 @@
       <q-tab-panels v-model="tab" animated>
           <q-tab-panel name="report" class="q-pa-none">
             <div>
-              <q-list class="q-px-md q-pt-md q-pb-sm">
-                <p class="q-mb-sm q-px-md">Company A</p>
-                <q-expansion-item>
+              <q-list separator class="q-px-md q-pt-md q-pb-sm" v-for="item in bi" :key="item.id">
+                <p class="q-mb-sm q-px-md"> {{item.name}} </p>
+                <q-expansion-item v-for="child in item.cashboxex" :key="child.id">
                   <template v-slot:header>
                     <q-item-section avatar>
                       <q-avatar size="md" icon="fab fa-kaggle" color="red" text-color="white" />
                     </q-item-section>
 
                     <q-item-section>
-                      Kaspi USD *7598
+                      {{child.name}}
                     </q-item-section>
 
                     <q-item-section side class="text-weight-bold text-dark">
-                      600 000
+                      {{child.amount}}
                     </q-item-section>
                   </template>
 
@@ -45,58 +45,7 @@
                         separator="none"
                         hide-bottom
                         hide-header
-                        :data="data"
-                        :columns="columns"
-                        row-key="name"
-                      >
-                        <template v-slot:body="props">
-                          <q-tr :props="props">
-                            <q-td key="name" :props="props" :class="{'text-weight-medium':props.row.type == 'old'}">
-                              {{ props.row.name }}
-                            </q-td>
-
-                            <q-td key="amount" :props="props">
-                              <p v-if="props.row.type == 'income'" class="text-red">
-                                - {{ props.row.amount }}
-                              </p>
-                              <p v-else-if="props.row.type == 'outcome'" class="text-green">
-                                + {{ props.row.amount }}
-                              </p>
-                              <p v-else class="text-dark text-weight-medium">
-                                {{ props.row.amount }}
-                              </p>
-                            </q-td>
-                          </q-tr>
-                        </template>
-                      </q-table>
-                    </q-card-section>
-                  </q-card>
-                </q-expansion-item>
-
-                <q-expansion-item>
-                  <template v-slot:header>
-                    <q-item-section avatar>
-                      <q-avatar size="md" icon="fab fa-kaggle" color="red" text-color="white" />
-                    </q-item-section>
-
-                    <q-item-section>
-                      Kaspi *7598
-                    </q-item-section>
-
-                    <q-item-section side class="text-weight-medium text-dark">
-                      500
-                    </q-item-section>
-                  </template>
-
-                  <q-card>
-                    <q-card-section>
-                      <q-table
-                        dense
-                        flat
-                        separator="none"
-                        hide-bottom
-                        hide-header
-                        :data="data"
+                        :data="child.discharge"
                         :columns="columns"
                         row-key="name"
                       >
@@ -124,115 +73,7 @@
                   </q-card>
                 </q-expansion-item>
               </q-list>
-
-              <q-separator size="10px" color="grey-3"/>
-              
-              <q-list class="q-px-md q-pt-md q-pb-sm">
-                <p class="q-mb-sm q-px-md">Company A</p>
-                <q-expansion-item>
-                  <template v-slot:header>
-                    <q-item-section avatar>
-                      <q-avatar size="md" icon="fab fa-kaggle" color="red" text-color="white" />
-                    </q-item-section>
-
-                    <q-item-section>
-                      Kaspi *7598
-                    </q-item-section>
-
-                    <q-item-section side class="text-weight-medium text-dark">
-                      000
-                    </q-item-section>
-                  </template>
-
-                  <q-card>
-                    <q-card-section>
-                      <q-table
-                        dense
-                        flat
-                        separator="none"
-                        hide-bottom
-                        hide-header
-                        :data="data"
-                        :columns="columns"
-                        row-key="name"
-                      >
-                        <template v-slot:body="props">
-                          <q-tr :props="props">
-                            <q-td key="name" :props="props" :class="{'text-weight-medium':props.row.type == 'old'}">
-                              {{ props.row.name }}
-                            </q-td>
-
-                            <q-td key="amount" :props="props">
-                              <p v-if="props.row.type == 'income'" class="text-red">
-                                - {{ props.row.amount }}
-                              </p>
-                              <p v-else-if="props.row.type == 'outcome'" class="text-green">
-                                + {{ props.row.amount }}
-                              </p>
-                              <p v-else class="text-dark text-weight-medium">
-                                {{ props.row.amount }}
-                              </p>
-                            </q-td>
-                          </q-tr>
-                        </template>
-                      </q-table>
-                    </q-card-section>
-                  </q-card>
-                </q-expansion-item>
-
-                <q-expansion-item>
-                  <template v-slot:header>
-                    <q-item-section avatar>
-                      <q-avatar size="md" icon="fab fa-kaggle" color="red" text-color="white" />
-                    </q-item-section>
-
-                    <q-item-section>
-                      Kaspi *7598
-                    </q-item-section>
-
-                    <q-item-section side class="text-weight-medium text-dark">
-                      000
-                    </q-item-section>
-                  </template>
-
-                  <q-card>
-                    <q-card-section>
-                      <q-table
-                        dense
-                        flat
-                        separator="none"
-                        hide-bottom
-                        hide-header
-                        :data="data"
-                        :columns="columns"
-                        row-key="name"
-                      >
-                        <template v-slot:body="props">
-                          <q-tr :props="props">
-                            <q-td key="name" :props="props" :class="{'text-weight-medium':props.row.type == 'old'}">
-                              {{ props.row.name }}
-                            </q-td>
-
-                            <q-td key="amount" :props="props">
-                              <p v-if="props.row.type == 'income'" class="text-red">
-                                - {{ props.row.amount }}
-                              </p>
-                              <p v-else-if="props.row.type == 'outcome'" class="text-green">
-                                + {{ props.row.amount }}
-                              </p>
-                              <p v-else class="text-dark text-weight-medium">
-                                {{ props.row.amount }}
-                              </p>
-                            </q-td>
-                          </q-tr>
-                        </template>
-                      </q-table>
-                    </q-card-section>
-                  </q-card>
-                </q-expansion-item>
-              </q-list>
-
-              <q-separator size="10px" color="grey-3"/>
+              <!-- <q-separator size="10px" color="grey-3" /> -->
             </div>
           </q-tab-panel>
 
@@ -246,12 +87,12 @@
 </template>
 
 <script>
-import dataJson from 'src/static/cash.json'
+import cash from 'src/static/cash1.json'
 
   export default {
     data: () => ({
       tab: 'report',
-      bi: dataJson,
+      bi: cash,
       columns: [
         {
           name: 'name',
@@ -286,11 +127,11 @@ import dataJson from 'src/static/cash.json'
       ]
     }),
     mounted() {
-
-    },
-    computed: {
       
     },
+    computed: {
+
+  },
     methods: {
       
     }
@@ -303,9 +144,9 @@ import dataJson from 'src/static/cash.json'
   margin: 0;
 }
 
-.q-expansion-item {
-  border-top: 1px solid #e5e5e5;
-}
+// .q-expansion-item {
+//   border-top: 1px solid #e5e5e5;
+// }
 
 .q-card__section--vert {
   padding-left: 73px;

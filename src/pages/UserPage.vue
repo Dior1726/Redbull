@@ -60,7 +60,7 @@
         <div>
           <q-input label="Search" filled>
             <template v-slot:append>
-              <q-icon name="search" />
+              <q-icon name="uil-search" size="20px" />
             </template>
           </q-input>
         </div>
@@ -70,7 +70,7 @@
           <q-item clickable v-ripple v-for="item in 5" :key="item" class="q-py-md">
             <q-item-section class="text-weight-bold">Rounded avatar-type icon</q-item-section>
             <q-item-section avatar>
-              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
+              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="uil-pen" />
             </q-item-section>
           </q-item>
 
@@ -110,7 +110,7 @@
             </q-item-section>
 
             <q-item-section avatar>
-              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
+              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="uil-pen" />
             </q-item-section>
           </q-item>
 
@@ -127,51 +127,7 @@
             </q-item-section>
 
             <q-item-section avatar>
-              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
-            </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section class="text-center">
-              + Add a member
-            </q-item-section>
-          </q-item>
-        </q-list>
-
-        <q-list separator>
-          <q-item-label header>Company B members</q-item-label>
-          
-          <q-item clickable v-ripple>
-            <q-item-section avatar top>
-              <q-avatar color="primary" text-color="white">
-                <img src="https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg" alt="">
-              </q-avatar>
-            </q-item-section>
-
-            <q-item-section>
-              <q-item-label lines="1">Galym Baibekov</q-item-label>
-              <q-item-label caption>BI analyst</q-item-label>
-            </q-item-section>
-
-            <q-item-section avatar>
-              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
-            </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section avatar top>
-              <q-avatar color="primary" text-color="white">
-                <img src="https://image.freepik.com/free-vector/beard-man-avatar_96853-399.jpg" alt="">
-              </q-avatar>
-            </q-item-section>
-
-            <q-item-section>
-              <q-item-label lines="1">Aidos Utebaev</q-item-label>
-              <q-item-label caption>BI analyst, financer</q-item-label>
-            </q-item-section>
-
-            <q-item-section avatar>
-              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="edit" />
+              <q-avatar rounded size="md" color="grey-3" text-color="accent" icon="uil-pen" />
             </q-item-section>
           </q-item>
 
