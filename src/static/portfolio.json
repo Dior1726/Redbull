@@ -1,191 +1,328 @@
 [
     {
-        "team": "Taycan",
-        "project": "Nova",
-        "stage": "Анализ и планирование",
-        "step": "Определение требований к отчетам",
-        "is_done": "1",
-        "days": "10",
-        "start_date": "12/1/20"
+        "id": 1,
+        "name": "Taycan",
+        "projects": [
+            {
+                "id": 1,
+                "name": "Nova",
+                "stage": [
+                    {
+                        "id": 1,
+                        "name": "Анализ и планирование",
+                        "is_done": true,
+                        "days": 10,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Определение требований aaaa",
+                                "checked": false
+                            },
+                            {
+                                "id": 2,
+                                "name": "Диагностика текущей IT-инфраструктуры",
+                                "checked": false
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Моделирование",
+                        "is_done": true,
+                        "days": 5,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Моделирование данных",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка макетов визуализации",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "Разработка и запуск",
+                        "is_done": false,
+                        "days": 15,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Разработка процессов ETL",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка дашбордов",
+                                "checked": true
+                            },
+                            {
+                                "id": 3,
+                                "name": "Тестирование и запуск",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "Разработка и запуск",
+                        "is_done": false,
+                        "days": 1,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Разработка процессов ETL",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка дашбордов",
+                                "checked": true
+                            },
+                            {
+                                "id": 3,
+                                "name": "Тестирование и запуск",
+                                "checked": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Bbnura",
+                "stage": [
+                    {
+                        "id": 1,
+                        "name": "Анализ и планирование",
+                        "is_done": true,
+                        "days": 10,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Определение требований к отчетам",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Диагностика текущей IT-инфраструктуры",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Моделирование",
+                        "is_done": false,
+                        "days": 5,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Моделирование данных",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка макетов визуализации",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "Разработка и запуск",
+                        "is_done": false,
+                        "days": 15,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Разработка процессов ETL",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка дашбордов",
+                                "checked": true
+                            },
+                            {
+                                "id": 3,
+                                "name": "Тестирование и запуск",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "Разработка и запуск",
+                        "is_done": false,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Разработка процессов ETL",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка дашбордов",
+                                "checked": true
+                            },
+                            {
+                                "id": 3,
+                                "name": "Тестирование и запуск",
+                                "checked": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-        "team": "Taycan",
-        "project": "Nova",
-        "stage": "Анализ и планирование",
-        "step": "Диагностика текущей IT-инфраструктуры",
-        "is_done": "1",
-        "days": "15",
-        "start_date": "12/1/20"
-    },
-    {
-        "team": "Taycan",
-        "project": "Nova",
-        "stage": "Моделирование",
-        "step": "Моделирование данных",
-        "is_done": "1",
-        "days": "15",
-        "start_date": "12/26/20"
-    },
-    {
-        "team": "Taycan",
-        "project": "Nova",
-        "stage": "Моделирование",
-        "step": "Разработка макетов визуализации",
-        "is_done": "1",
-        "days": "30",
-        "start_date": "12/26/20"
-    },
-    {
-        "team": "Taycan",
-        "project": "Nova",
-        "stage": "Разработка и запуск",
-        "step": "Разработка процессов ETL",
-        "is_done": "1",
-        "days": "40",
-        "start_date": "2/9/21"
-    },
-    {
-        "team": "Taycan",
-        "project": "Nova",
-        "stage": "Разработка и запуск",
-        "step": "Разработка дашбордов",
-        "is_done": "0",
-        "days": "10",
-        "start_date": "2/9/21"
-    },
-    {
-        "team": "Taycan",
-        "project": "Nova",
-        "stage": "Разработка и запуск",
-        "step": "Тестирование и запуск",
-        "is_done": "0",
-        "days": "5",
-        "start_date": "2/9/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "DAMU",
-        "stage": "Анализ и планирование",
-        "step": "Архитектура системы",
-        "is_done": "1",
-        "days": "14",
-        "start_date": "2/1/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "DAMU",
-        "stage": "Анализ и планирование",
-        "step": "План проекта",
-        "is_done": "1",
-        "days": "3",
-        "start_date": "2/1/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "DAMU",
-        "stage": "Интеграция",
-        "step": "Получение данных из СЭД Документолог",
-        "is_done": "1",
-        "days": "4",
-        "start_date": "2/18/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "DAMU",
-        "stage": "Интеграция",
-        "step": "Получение данных из bpm online sales",
-        "is_done": "1",
-        "days": "14",
-        "start_date": "2/18/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "DAMU",
-        "stage": "Интеграция",
-        "step": "Получение данных из excel",
-        "is_done": "1",
-        "days": "1",
-        "start_date": "2/18/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "DAMU",
-        "stage": "Хранилище данных",
-        "step": "Организация ХД",
-        "is_done": "0",
-        "days": "5",
-        "start_date": "3/9/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "Samruk",
-        "stage": "Анализ и планирование",
-        "step": "Архитектура системы",
-        "is_done": "1",
-        "days": "14",
-        "start_date": "12/15/20"
-    },
-    {
-        "team": "Aidos",
-        "project": "Samruk",
-        "stage": "Анализ и планирование",
-        "step": "План проекта",
-        "is_done": "1",
-        "days": "3",
-        "start_date": "12/15/20"
-    },
-    {
-        "team": "Aidos",
-        "project": "Samruk",
-        "stage": "Интеграция",
-        "step": "Получение данных из АСКУЭ",
-        "is_done": "1",
-        "days": "10",
-        "start_date": "1/1/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "Samruk",
-        "stage": "Интеграция",
-        "step": "Получение данных из АЛСЕКО",
-        "is_done": "1",
-        "days": "12",
-        "start_date": "1/1/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "Samruk",
-        "stage": "Хранилище данных",
-        "step": "Организация ХД",
-        "is_done": "1",
-        "days": "25",
-        "start_date": "1/23/21"
-    },
-    {
-        "team": "Aidos",
-        "project": "Samruk",
-        "stage": "RESTful-сервис",
-        "step": "Реализация интеграции ХД для выгрузки информации",
-        "is_done": "0",
-        "days": "4",
-        "start_date": "2/17/21"
-    },
-    {
-        "team": "Taycan",
-        "project": "Bbnura",
-        "stage": "Анализ и планирование",
-        "step": "Определение требований к отчетам",
-        "is_done": "1",
-        "days": "3",
-        "start_date": "3/25/21"
-    },
-    {
-        "team": "Taycan",
-        "project": "Bbnura",
-        "stage": "Анализ и планирование",
-        "step": "Диагностика текущей IT-инфраструктуры",
-        "is_done": "0",
-        "days": "1",
-        "start_date": "3/25/21"
+        "id": 2,
+        "name": "Aidos",
+        "projects": [
+            {
+                "id": 3,
+                "name": "Damu",
+                "stage": [
+                    {
+                        "id": 1,
+                        "name": "Анализ и планирование",
+                        "is_done": true,
+                        "days": 3,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Архитектура системы",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "План проекта",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Интеграция",
+                        "is_done": false,
+                        "days": 5,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Получение данных из СЭД Документолог",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Получение данных из bpm online sales",
+                                "checked": true
+                            },
+                            {
+                                "id": 3,
+                                "name": "Получение данных из excel",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "Хранилище данных",
+                        "is_done": false,
+                        "days": 15,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Организация ХД",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "name": "RESTful-сервис",
+                        "is_done": false,
+                        "days": 5,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Реализация интеграции ХД для выгрузки информации",
+                                "checked": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Samruk",
+                "stage": [
+                    {
+                        "id": 1,
+                        "name": "Анализ и планирование",
+                        "is_done": false,
+                        "days": 5,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Определение требований к отчетам",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Диагностика текущей IT-инфраструктуры",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Моделирование",
+                        "is_done": false,
+                        "days": 5,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Моделирование данных",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка макетов визуализации",
+                                "checked": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": "Разработка и запуск",
+                        "is_done": false,
+                        "days": 15,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Разработка процессов ETL",
+                                "checked": true
+                            },
+                            {
+                                "id": 2,
+                                "name": "Разработка дашбордов",
+                                "checked": true
+                            },
+                            {
+                                "id": 3,
+                                "name": "Тестирование и запуск",
+                                "checked": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

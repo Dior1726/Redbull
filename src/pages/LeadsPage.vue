@@ -49,6 +49,8 @@
 <script>
 import CardBase from 'components/CardBase'
 import ApexColumnWithDataLabels from 'src/components/ApexColumnWithDataLabels.vue'
+import ApexSimplePieChart from "components/ApexSimplePieChart"
+
 
   export default {
     data: () => ({
@@ -56,7 +58,7 @@ import ApexColumnWithDataLabels from 'src/components/ApexColumnWithDataLabels.vu
     }),
     components: {
       CardBase, ApexColumnWithDataLabels,
-      ApexSimplePieChart: () => import('components/ApexSimplePieChart')
+      ApexSimplePieChart
     }
   }
 </script>

@@ -48,6 +48,7 @@
 
 <script>
 import CardBase from 'components/CardBase'
+import ApexSimplePieChart from "components/ApexSimplePieChart"
 
   export default {
     data: () => ({
@@ -55,7 +56,7 @@ import CardBase from 'components/CardBase'
     }),
     components: {
       CardBase,
-      ApexSimplePieChart: () => import('components/ApexSimplePieChart'),
+      ApexSimplePieChart,
       ApexStackedColumns100: () => import('components/ApexStackedColumns100')
     }
   }
