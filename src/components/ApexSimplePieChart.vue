@@ -5,9 +5,10 @@
 <script>
 export default {
   name: 'ApexSimplePieChart',
+  props: ['arr'],
   data () {
     return {
-      series: [44, 55, 13, 50],
+      series: this.arr || [45,46,47,44],
       chartOptions: {
         chart: {
           type: 'pie',
@@ -22,7 +23,7 @@ export default {
             color: '#FFF'
           }
         },
-        labels: ['Team A', 'Team B', 'Team C', "Team D"],
+        labels: ['Taycan', 'Tornado', 'Yerlans Team', "South Park"],
         responsive: [{
           breakpoint: 480,
           options: {

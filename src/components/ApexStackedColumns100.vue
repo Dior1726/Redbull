@@ -5,20 +5,21 @@
 <script>
 export default {
   name: 'ApexStackedColumns100',
+  props:['sales'],
   data () {
     return {
       series: [{
         name: 'Taycan',
-        data: [44, 55, 41, 67, 22, 43, 21, 49]
+        data: []
       }, {
         name: 'Tornado',
-        data: [13, 23, 20, 8, 13, 27, 33, 12]
+        data: []
+      },{
+        name: 'Yerlans Team',
+        data: []
       }, {
-        name: 'South park',
-        data: [11, 17, 15, 15, 21, 14, 15, 13]
-      }, {
-        name: "Yerlan's team",
-        data: [11, 17, 15, 15, 21, 14, 15, 13]
+        name: 'South Park',
+        data: []
       }],
       chartOptions: {
         chart: {
@@ -31,10 +32,11 @@ export default {
           stackType: '100%'
         },
         title: {
-          text: undefined,
+          text: "За последние 8 месяцев",
           align: 'left',
           style: {
-            color: '#FFF'
+            color: '#FFF',
+            fontSize: '12px'
           }
         },
         responsive: [{
@@ -48,7 +50,7 @@ export default {
           }
         }],
         xaxis: {
-          categories: ['05', '06', '07', '08', '09', '10', '11', '12'],
+          categories: [],
           labels: {
             style: {
               colors: '#fff'
@@ -59,7 +61,7 @@ export default {
           labels: {
             show: false,
             style: {
-              colors: '#fff'
+              colors: '#fff',
             }
           },
         },
@@ -76,8 +78,86 @@ export default {
         },
         grid: {
           show: false
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '50%'
+          }
+        },
+        dataLabels: {
+          style: {
+            fontSize: '8px'
+          }
         }
       }
+    }
+  },
+  mounted() {
+    
+  },
+  created() {
+    this.taycanAmount()
+    this.taycanCategories()
+    this.tornadoAmount()
+    this.yerlanAmount()
+    this.southParkAmount()
+  },
+  computed: {
+    // не самый оптимальный вариант 
+    taycan() {
+      let taycanData = this.sales.filter(item => item.team == 'Taycan')
+      return taycanData
+    },
+    tornado() {
+      let tornadoData = this.sales.filter(item => item.team == 'Tornado')
+      return tornadoData
+    },
+    yerlan() {
+      let yerlanData = this.sales.filter(item => item.team == 'Yerlans team')
+      return yerlanData
+    },
+    southPark() {
+      let southParkData = this.sales.filter(item => item.team == 'South Park')
+      return southParkData
+    }
+  },
+  methods: {
+    // не самый оптимальный вариант 
+    taycanCategories() {
+      let arr = []
+      this.taycan.forEach(item => {
+        arr.push(item.month)
+      })
+      arr = arr.slice(-8)
+      this.chartOptions.xaxis.categories = arr
+    },
+    taycanAmount() {
+      let arr = []
+      this.taycan.forEach(item => {
+        arr.push(+item.amount)
+      })
+      this.series[0].data = arr.slice(-8)
+    },
+    tornadoAmount() {
+      let arr = []
+      this.tornado.forEach(item => {
+        arr.push(+item.amount)
+      })
+      this.series[1].data = arr.slice(-8)
+    },
+    yerlanAmount() {
+      let arr = []
+      this.yerlan.forEach(item => {
+        arr.push(+item.amount)
+      })
+      this.series[2].data = arr.slice(-8)
+    },
+    southParkAmount() {
+      let arr = []
+      this.southPark.forEach(item => {
+        arr.push(+item.amount)
+      })
+      this.series[3].data = arr.slice(-8)
     }
   }
 }
