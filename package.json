@@ -16,7 +16,7 @@
     "core-js": "^3.6.5",
     "quasar": "^1.0.0",
     "vue-apexcharts": "^1.6.0",
-    "vue-stepper": "^1.4.2"
+    "vue-stepper": "^1.0.11"
   },
   "devDependencies": {
     "@quasar/app": "^2.0.0",
