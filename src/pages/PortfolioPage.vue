@@ -20,11 +20,10 @@
       <q-tab-panels v-model="tab" animated>
           <q-tab-panel name="report">
 
-            <!-- first company -->
-            <div v-for="team in port" :key="team.id">
+            <div v-for="team in ports" :key="team.id">
               <div class="text-h6 q-my-sm"> {{team.name}} </div>
               <div v-for="project in team.projects" :key="project.id">
-                <div @click="clickStep(project.id)" class="flex justify-between items-center q-pt-sm border-top">
+                <div @click="clickStep(project.id)" class="flex bg-grey justify-between items-center q-pt-sm border-top">
                   <div class="text-subtitle1"> {{project.name}} </div>
                   <div class=" q-px-md text-grey-7 text-right" :class="{'translate':project.id == clickId}">
                     <q-icon size="14px" class="fas fa-chevron-down"></q-icon>
@@ -32,8 +31,9 @@
                 </div>
                 <q-stepper
                   flat
+                  header-nav
                   v-model="step"
-                  ref="stepper"
+                  :ref="'stepper' + project.id"
                   alternative-labels
                   done-color="accent"
                   active-color="accent-light"
@@ -49,6 +49,7 @@
                     icon="settings"
                     :done="stage.is_done"
                     v-show="project.id === clickId"
+                    :header-nav="stage.is_done"
                   >
                     <q-checkbox 
                       v-for="step in stage.steps" 
@@ -57,14 +58,6 @@
                       :label="step.name" 
                       color="accent"
                     />
-                    <!-- <q-option-group
-                      :options="options"
-                      label="2"
-                      type="checkbox"
-                      v-model="group"
-                      disable
-                      color="accent"
-                    /> -->
                   </q-step>
 
                   <!-- <template  v-slot:navigation>
@@ -76,13 +69,6 @@
                 </q-stepper>
               </div>
             </div>
-
-            <!-- <div style="margin-left: -30px; margin-right: -30px;">
-              <q-separator size="10px" />
-            </div> -->
-
-            <!-- second company -->
-            
           </q-tab-panel>
 
           <q-tab-panel name="insights">
@@ -100,7 +86,7 @@ import portfolioData from "src/static/Portfolio.json"
 
   export default {
     data: () => ({
-      port: portfolioData,
+      ports: portfolioData,
       tab: 'report',
       clickId: false,
       step: 1,

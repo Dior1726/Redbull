@@ -16,12 +16,12 @@
                             {
                                 "id": 1,
                                 "name": "Определение требований aaaa",
-                                "checked": false
+                                "checked": true
                             },
                             {
                                 "id": 2,
                                 "name": "Диагностика текущей IT-инфраструктуры",
-                                "checked": false
+                                "checked": true
                             }
                         ]
                     },

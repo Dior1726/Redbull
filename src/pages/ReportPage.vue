@@ -19,38 +19,19 @@
       <router-link
         tag="div" 
         class="my-card q-card"
-        v-for="item in arr"
-        :key="item.id"
-        :to="{name: item.to}"
+        v-for="report in reports"
+        :key="report.id"
+        :to="{name: report.to}"
       >
-          <q-badge v-if="item.newMessage" color="orange" floating />
+          <q-badge v-if="report.newMessage" color="orange" floating />
         <q-card-section class="flex items-center justify-center column text-h6 text-grey-8 full-height">
           <div class="bg-white card-round" >
-            <q-icon :class="item.icon" size="md" color="accent" />
+            <q-icon :class="report.icon" size="md" color="accent" />
           </div>
-          {{item.title}}
+          {{report.title}}
         </q-card-section>
       </router-link>
     </div>
-
-    <!-- <q-card class="my-card">
-      <q-card-section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati.
-      </q-card-section>
-    </q-card>
-
-    <q-card class="my-card">
-      <q-card-section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati.
-      </q-card-section>
-    </q-card>
-
-    <q-card class="my-card">
-      <q-card-section>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati.
-      </q-card-section>
-    </q-card> -->
-
   </q-page>
 </template>
 
@@ -59,7 +40,7 @@ export default {
   name: 'ReportPage',
   data() {
     return {
-      arr: [
+      reports: [
         {
           title: 'Portfolio',
           id: 1,

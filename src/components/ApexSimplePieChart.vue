@@ -5,10 +5,10 @@
 <script>
 export default {
   name: 'ApexSimplePieChart',
-  props: ['arr'],
+  props: ['salesList'],
   data () {
     return {
-      series: this.arr || [45,46,47,44],
+      series: this.salesList || [45,46,47,44],
       chartOptions: {
         chart: {
           type: 'pie',

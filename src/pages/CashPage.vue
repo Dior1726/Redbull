@@ -20,9 +20,9 @@
       <q-tab-panels v-model="tab" animated>
           <q-tab-panel name="report" class="q-pa-none">
             <div>
-              <q-list separator class="q-px-md q-pt-md q-pb-sm" v-for="item in bi" :key="item.id">
-                <p class="q-mb-sm q-px-md"> {{item.name}} </p>
-                <q-expansion-item v-for="child in item.cashboxex" :key="child.id">
+              <q-list separator class="q-px-md q-pt-md q-pb-sm" v-for="cash in cashList" :key="cash.id">
+                <p class="q-mb-sm q-px-md"> {{cash.name}} </p>
+                <q-expansion-item v-for="child in cash.cashboxex" :key="child.id">
                   <template v-slot:header>
                     <q-item-section avatar>
                       <q-avatar size="md" icon="fab fa-kaggle" color="red" text-color="white" />
@@ -92,7 +92,7 @@ import cash from 'src/static/cash1.json'
   export default {
     data: () => ({
       tab: 'report',
-      bi: cash,
+      cashList: cash,
       columns: [
         {
           name: 'name',

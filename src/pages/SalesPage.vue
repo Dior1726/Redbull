@@ -24,7 +24,7 @@
 
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <card-base>
-                  <apex-simple-pie-chart :arr="childArr"></apex-simple-pie-chart>
+                  <apex-simple-pie-chart :salesList="salesList"></apex-simple-pie-chart>
                 </card-base>
               </div>
 
@@ -57,7 +57,7 @@ import ApexStackedColumns100 from "components/ApexStackedColumns100"
     data: () => ({
       tab: 'graphics',
       salesData,
-      childArr: []
+      salesList: []
     }),
     components: {
       CardBase,
@@ -68,7 +68,7 @@ import ApexStackedColumns100 from "components/ApexStackedColumns100"
       this.allAmount()
     },
     mounted() {
-      console.log('hello');
+      
     },
     methods: {
       allAmount() {
@@ -98,7 +98,7 @@ import ApexStackedColumns100 from "components/ApexStackedColumns100"
         arr.push(data2)
         arr.push(data3)
 
-        this.childArr = arr
+        this.salesList = arr
       }
     },
     computed: {
