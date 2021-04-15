@@ -1,6 +1,5 @@
 <template>
   <q-page class="q-pa-md">
-
     <q-card class="my-card q-mb-md bg-accent text-white">
       <q-card-section horizontal class="flex justify-around items-center q-pt-md">
         <q-card-section class="q-pt-xs">
@@ -70,6 +69,9 @@ export default {
       ]
     }
   },
+  mounted() {
+    
+  }
 }
 </script>
 

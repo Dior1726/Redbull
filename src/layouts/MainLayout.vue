@@ -1,4 +1,3 @@
-
 <template>
   <q-layout view="lHh lpR lFf">
 
@@ -9,9 +8,21 @@
         <q-btn class="gt-xs" dense flat round icon="menu" @click="left = !left" />
 
         <q-toolbar-title class="absolute-center">
-          {{this.$route.name}}
+          {{title}} 
         </q-toolbar-title>
         <q-space/>
+        <q-select
+          v-if="this.$route.name == 'ReportPage'"
+          v-model="lang"
+          :options="langOptions"
+          dense
+          borderless
+          emit-value
+          map-options
+          color="accent"
+          options-dense
+          style="min-width: 50px"
+        />
         <q-btn v-if="this.$route.name == 'Profile'" flat class="bg-accent-light" icon="uil-pen" size="md" />
       </q-toolbar>
     </q-header>
@@ -134,9 +145,25 @@ export default {
   name: 'MainLayout',
   data () {
     return {
-      left: false
+      left: false,
+      lang: this.$i18n.locale,
+      langOptions: [
+        { value: 'ru', label: 'Ru' },
+        { value: 'kz', label: 'Kz' }
+      ]
     }
   },
+  mounted() {},
+  computed: {
+    title() {
+      return this.$t(this.$route.name);
+    }
+  },
+   watch: {
+    lang(lang) {
+      this.$i18n.locale = lang
+    }
+  }
 }
 
 </script>
@@ -154,4 +181,5 @@ export default {
 .q-item__section--side {
   padding-right: 0;
 }
+
 </style>
