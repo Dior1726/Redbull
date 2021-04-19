@@ -12,7 +12,7 @@ const routes = [
       {
         path: "/portfolio",
         component: () => import("src/pages/PortfolioPage.vue"),
-        name: "Portfolio",
+        name: "Projects",
         meta: {
           child: true
         }

@@ -34,12 +34,12 @@
                             {
                                 "id": 1,
                                 "name": "Моделирование данных",
-                                "checked": true
+                                "checked": false
                             },
                             {
                                 "id": 2,
                                 "name": "Разработка макетов визуализации",
-                                "checked": true
+                                "checked": false
                             }
                         ]
                     },

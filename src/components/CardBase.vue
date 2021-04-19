@@ -1,5 +1,5 @@
 <template>
-  <q-card class="fit bg-accent-light" >
+  <q-card class="fit" flat >
     <q-card-section>
       <slot></slot>
     </q-card-section>

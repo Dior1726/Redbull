@@ -1,13 +1,6 @@
 // app global css in SCSS form
 
-.q-item.q-router-link--active, .q-item--active {
-    color: $accent;
-    font-weight: 500;
-    i {
-        color: $accent;
-    }
-}
-
+// bg & text colors
 .bg-accent-light {
     background-color: $accentdark;
 }
@@ -16,10 +9,46 @@
     color: $accentdark;
 }
 
-main {
-    min-height: 100vh;
+.bg-light {
+    background: $bg-light;
 }
 
 .shadow-accent {
   box-shadow: 0 0 3px 12px #5850d4;
 }
+
+//  App styles
+header .q-toolbar {
+    min-height: 55px;
+}
+
+main {
+    min-height: 100vh;
+    background: $bg-light;
+}
+
+// menu icon active style
+.q-item.q-router-link--active, .q-item--active {
+    color: $accent;
+    font-weight: 500;
+    i {
+        color: $accent;
+    }
+}
+
+// Tab style 
+.q-tab.q-tab--active {
+    .q-tab__label {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.q-tab.q-tab--inactive {
+    .q-tab__label {
+        font-weight: 400;
+        font-size: 16px;
+        opacity: .4;
+    }
+}
+// Tab style end

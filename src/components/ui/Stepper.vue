@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <div @click="showStepContent" class="flex justify-between items-center q-pt-sm ">
+  <div class="q-mb-md stepper-area">
+    <div @click="showStepContent" class="flex justify-between items-center q-py-sm ">
       <div class="text-subtitle1"> {{project.name}} </div>
-      <div class=" q-px-md text-grey-7 text-right" :class="{'translate':showStep}">
-        <q-icon size="14px" class="fas fa-chevron-down" ></q-icon>
+      <div class="text-grey-7 text-right" :class="{'translate':showStep}">
+        <q-icon size="12px" class="fas fa-chevron-down" ></q-icon>
       </div>
     </div>
     <q-stepper
+      flat
       header-nav
       v-model="step"
       ref="stepper"
@@ -56,22 +57,23 @@
       }
     } ,
     mounted() {
-      console.log(this.project);
+      
     },
     methods: {
       showStepContent() {
           this.showStep = !this.showStep
-          console.log(this.showStep);
       }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-.border-top {
+
+.stepper-area {
   border-top: 1px solid #e5e5e5;
 }
 
+// Stepper styles for checkbox, padding, background and other
 .q-stepper {
   &::v-deep {
     .q-stepper__tab {
@@ -80,6 +82,27 @@
     }
     .q-stepper__step-inner {
       padding: 12px 12px 12px 24px;
+      .q-checkbox__bg {
+        width: 24px;
+        height: 24px;
+        min-height: 24px;
+        border-radius: 20px;
+        border: 1px solid #e5e5e5;
+        display: flex;
+        .q-checkbox__svg {
+          margin: auto;
+          width: 70% !important;
+          height: 70% !important;
+        }
+      }
+      .q-checkbox__inner--truthy .q-checkbox__bg {
+        border-radius: 20px;
+      }
+    }
+    .q-checkbox__inner--falsy {
+      .q-checkbox__bg {
+        background: #e5e5e5;
+      }
     }
     .q-stepper__nav {
       padding-left: 12px;
@@ -89,6 +112,7 @@
 
 i {
   transition: transform .3s;
+  color: #909090;
 }
 
 .translate {

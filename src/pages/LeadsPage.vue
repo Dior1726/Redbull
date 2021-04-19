@@ -19,7 +19,6 @@
     <div class="">
       <q-tab-panels v-model="tab" animated>
           <q-tab-panel name="graphics">
-            <div class="text-h6 q-mb-md"> title </div>
             <div class="row q-col-gutter-md q-pa-xs">
 
               <div class="col-md-6 col-sm-12 col-xs-12">

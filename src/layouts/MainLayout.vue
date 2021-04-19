@@ -1,18 +1,18 @@
 <template>
   <q-layout view="lHh lpR lFf">
 
-    <q-header class="bg-accent text-white">
+    <q-header :class="[this.$route.name == 'ReportPage' ? 'bg-light text-dark' : 'bg-accent text-white']">
      <q-toolbar>
         <q-btn v-if="this.$route.meta.child" v-go-back.single flat icon="fas fa-arrow-left" size="sm" />
         
         <q-btn class="gt-xs" dense flat round icon="menu" @click="left = !left" />
 
-        <q-toolbar-title class="absolute-center">
+        <q-toolbar-title class="absolute-center" style="font-weight: 600; font-size: 22px;">
           {{title}} 
         </q-toolbar-title>
         <q-space/>
         <q-select
-          v-if="this.$route.name == 'ReportPage'"
+          v-if="false"
           v-model="lang"
           :options="langOptions"
           dense
@@ -110,7 +110,7 @@
     <!--  Mobile Navbar   -->
     <q-footer bordered class="bg-grey-1 text-dark lt-sm ">
       <q-list class="flex justify-between">
-        <q-item clickable v-ripple to="/" exact>
+        <q-item clickable v-ripple to="/" exact :class="{'q-router-link--active': this.$route.name == 'Projects'}">
           <q-item-section avatar>
             <q-avatar size="xl" text-color="grey-5" icon="uil-chart-bar" />
           </q-item-section>
@@ -173,13 +173,29 @@ export default {
   padding: 0;
 }
 .q-item {
-  padding: 8px 4px;
+  padding: 16px 8px;
 }
 .q-avatar {
   margin: 0 auto;
 }
 .q-item__section--side {
   padding-right: 0;
+}
+
+header {
+  &::v-deep {
+    .q-select__dropdown-icon {
+      color: #fff;
+    }
+
+    .q-field__native {
+      color: #fff;
+    }
+  }
+}
+
+.q-footer--bordered {
+  border-color: #eee;
 }
 
 </style>

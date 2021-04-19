@@ -35,7 +35,7 @@ export default {
           text: "За последние 8 месяцев",
           align: 'left',
           style: {
-            color: '#FFF',
+            color: '#000',
             fontSize: '12px'
           }
         },
@@ -53,7 +53,7 @@ export default {
           categories: [],
           labels: {
             style: {
-              colors: '#fff'
+              colors: '#000'
             }
           }
         },
@@ -69,11 +69,11 @@ export default {
           opacity: 1
         },
         legend: {
-          position: 'right',
+          position: 'bottom',
           offsetX: 0,
-          offsetY: 50,
+          offsetY: 100,
           labels: {
-            colors: '#FFF'
+            colors: '#000'
           }
         },
         grid: {
@@ -86,7 +86,8 @@ export default {
         },
         dataLabels: {
           style: {
-            fontSize: '8px'
+            fontSize: '8px',
+            colors: ['#fff']
           }
         }
       }

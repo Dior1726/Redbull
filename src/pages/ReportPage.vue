@@ -21,15 +21,21 @@
         v-for="report in reports"
         :key="report.id"
         :to="{name: report.to}"
+        :style="{'background': report.bgColor}"
       >
           <q-badge v-if="report.newMessage" color="orange" floating />
-        <q-card-section class="flex items-center justify-center column text-h6 text-grey-8 full-height">
-          <div class="bg-white card-round" >
-            <q-icon :class="report.icon" size="md" color="accent" />
+        <q-card-section class="flex items-center justify-center column full-height" style="font-weight: 500;font-size: 16px">
+          <div class="bg-white card-round q-mb-sm" >
+            <q-icon :class="report.icon" size="21px" :style="{'color': report.iconColor}" />
           </div>
           {{report.title}}
         </q-card-section>
       </router-link>
+      <div
+        class="my-card q-card"
+        v-for="(item, i) in 6"
+        :key="i+5"
+      ></div>
     </div>
   </q-page>
 </template>
@@ -41,30 +47,38 @@ export default {
     return {
       reports: [
         {
-          title: 'Portfolio',
+          title: 'Projects',
           id: 1,
           newMessage: true,
-          to: 'Portfolio',
-          icon: "uil-briefcase"
+          to: 'Projects',
+          icon: "uil-briefcase",
+          iconColor: '#3FD1FF',
+          bgColor: '#D9EFFF'
         },
         {
-          title: 'Cash',
+          title: 'Leads',
           id: 2,
-          to: 'Cash',
-          icon: "uil-dollar-alt"
+          to: 'Leads',
+          icon: "uil-smile",
+          iconColor: '#F86F98',
+          bgColor: 'rgba(238, 111, 186, 0.16)'
         },
         {
           title: 'Sales',
           id: 3,
           to: 'Sales',
-          icon: "uil-arrow-growth"
+          icon: "uil-arrow-growth",
+          iconColor: '#FF934F',
+          bgColor: 'rgba(255, 138, 91, 0.17)'
         },
         {
-          title: 'Leads',
+          title: 'Cash',
           id: 4,
           newMessage: true,
-          to: 'Leads',
-          icon: "uil-smile"
+          to: 'Cash',
+          icon: "uil-dollar-alt",
+          iconColor: '#53CF3B',
+          bgColor: 'rgba(80, 205, 62, 0.19)'
         }
       ]
     }
@@ -80,8 +94,8 @@ export default {
   flex-basis: 150px;
   min-height: 150px;
   flex-grow: 1;
-  background: #F0F0F0;
   box-shadow: none;
+  background: #F2F2F9;
 }
 
 .q-badge {
@@ -93,7 +107,11 @@ export default {
 }
 
 .card-round {
-  padding: 10px 12px;
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

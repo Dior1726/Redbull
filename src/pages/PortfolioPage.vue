@@ -20,8 +20,8 @@
       <q-tab-panels v-model="tab" animated>
           <q-tab-panel name="report">
 
-            <div v-for="team in ports" :key="team.id">
-              <div class="text-h6 q-my-sm"> {{team.name}} </div>
+            <div v-for="team in ports" :key="team.id" class="q-mb-lg">
+              <div class="q-mt-sm q-mb-md" style="font-weight: 600; font-size: 18px;"> {{team.name}} </div>
               <stepper v-for="project in team.projects" :project="project" :key="project.id">
               </stepper>
             </div>
@@ -70,5 +70,5 @@ import Stepper from 'src/components/ui/Stepper.vue'
 </script>
 
 <style lang="scss" scoped>
-
+  
 </style>

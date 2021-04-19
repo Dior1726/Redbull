@@ -1,5 +1,5 @@
 <template>
-  <q-page >
+  <q-page>
     <q-tabs
       class="full-width bg-accent-light text-white"
       v-model="tab"
@@ -16,10 +16,9 @@
         no-caps
       />
     </q-tabs>
-    <div class="">
-      <q-tab-panels v-model="tab" animated>
+    <div>
+      <q-tab-panels v-model="tab" animated style="background: #f7f7f9">
           <q-tab-panel name="graphics">
-            <div class="text-h6 q-mb-md"> title </div>
             <div class="row q-col-gutter-md q-pa-xs">
 
               <div class="col-md-6 col-sm-12 col-xs-12">

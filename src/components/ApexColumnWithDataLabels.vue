@@ -22,7 +22,7 @@ export default {
           text: 'Column With Data Labels',
           align: 'left',
           style: {
-            color: '#FFF'
+            color: '#000'
           }
         },
         chart: {
@@ -47,7 +47,7 @@ export default {
           offsetY: -20,
           style: {
             fontSize: '12px',
-            colors: ['#FFF']
+            colors: ['#000']
           }
         },
         xaxis: {
@@ -55,7 +55,7 @@ export default {
           position: 'top',
           labels: {
             style: {
-              colors: '#fff'
+              colors: '#000'
             }
           },
           axisBorder: {
@@ -93,7 +93,7 @@ export default {
               return val + '%'
             },
             style: {
-              colors: '#fff'
+              colors: '#000'
             }
           }
         }

@@ -5,5 +5,5 @@ export default {
   failed: "Ощибка",
   success: "Успешно",
   ReportPage: "Отчеты",
-  Portfolio: "Портфолио"
+  Portfolio: "Проекты"
 };

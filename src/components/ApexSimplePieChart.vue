@@ -1,5 +1,5 @@
 <template>
-  <apexchart type="pie" height="230" :options="chartOptions" :series="series"></apexchart>
+  <apexchart type="donut" height="230" :options="chartOptions" :series="series"></apexchart>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
       series: this.salesList || [45,46,47,44],
       chartOptions: {
         chart: {
-          type: 'pie',
+          type: 'donut',
           toolbar: {
             show: false
           }
@@ -20,7 +20,7 @@ export default {
           text: 'Pie',
           align: 'left',
           style: {
-            color: '#FFF'
+            color: '#000'
           }
         },
         labels: ['Taycan', 'Tornado', 'Yerlans Team', "South Park"],
@@ -36,8 +36,70 @@ export default {
           }
         }],
         legend: {
+          show: false,
           labels: {
-            colors: '#FFF'
+            colors: '#000'
+          }
+        },
+        dataLabels: {
+          textAnchor: 'end',
+          style: {
+            colors: ['#fff']
+          }
+        },
+        plotOptions: {
+          pie: {
+            startAngle: 0,
+            endAngle: 360,
+            expandOnClick: true,
+            offsetX: 0,
+            offsetY: 0,
+            customScale: 1,
+            dataLabels: {
+                offset: 0,
+                minAngleToShowLabel: 10
+            }, 
+            donut: {
+              labels: {
+                show: true,
+                name: {
+                  show: false,
+                  fontSize: '22px',
+                  fontFamily: 'Helvetica, Arial, sans-serif',
+                  fontWeight: 600,
+                  color: undefined,
+                  offsetY: -10,
+                  formatter: function (val) {
+                    return val
+                  }
+                },
+                value: {
+                  show: true,
+                  fontSize: '22px',
+                  fontFamily: 'Helvetica, Arial, sans-serif',
+                  fontWeight: 600,
+                  color: undefined,
+                  offsetY: 0,
+                  formatter: function (val) {
+                    return val
+                  }
+                },
+                total: {
+                  show: true,
+                  showAlways: false,
+                  label: 'Total',
+                  fontSize: '22px',
+                  fontFamily: 'Helvetica, Arial, sans-serif',
+                  fontWeight: 600,
+                  color: '#373d3f',
+                  formatter: function (w) {
+                    return w.globals.seriesTotals.reduce((a, b) => {
+                      return a + b
+                    }, 0)
+                  }
+                }
+              }
+            },      
           }
         }
       }

@@ -21,18 +21,18 @@
           <q-tab-panel name="report" class="q-pa-none">
             <div>
               <q-list separator class="q-px-md q-pt-md q-pb-sm" v-for="cash in cashList" :key="cash.id">
-                <p class="q-mb-sm q-px-md"> {{cash.name}} </p>
+                <p class="q-mb-sm q-px-md" style="font-weight: 400; font-size: 14px;"> {{cash.name}} </p>
                 <q-expansion-item v-for="child in cash.cashboxex" :key="child.id">
                   <template v-slot:header>
                     <q-item-section avatar>
-                      <q-avatar size="md" icon="fab fa-kaggle" color="red" text-color="white" />
+                      <q-avatar size="24px" icon="fab fa-kaggle" color="red" text-color="white" />
                     </q-item-section>
 
-                    <q-item-section>
+                    <q-item-section style="font-weight: 600; font-size: 14px;">
                       {{child.name}}
                     </q-item-section>
 
-                    <q-item-section side class="text-weight-bold text-dark">
+                    <q-item-section side style="font-weight: 600; font-size: 14px; color: #333">
                       {{child.amount}}
                     </q-item-section>
                   </template>
@@ -149,6 +149,10 @@ import cash from 'src/static/cash1.json'
 // }
 
 .q-card__section--vert {
-  padding-left: 73px;
+  padding-left: 57px;
+}
+
+.q-item__section--side {
+  color: #909090;
 }
 </style>
