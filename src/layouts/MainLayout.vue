@@ -108,7 +108,7 @@
 
 
     <!--  Mobile Navbar   -->
-    <q-footer bordered class="bg-grey-1 text-dark lt-sm ">
+    <q-footer bordered class="bg-white text-dark lt-sm ">
       <q-list class="flex justify-between">
         <q-item clickable v-ripple to="/" exact :class="{'q-router-link--active': this.$route.name == 'Projects'}">
           <q-item-section avatar>

@@ -1,181 +1,68 @@
 [
     {
         "id": 1,
-        "name": "Taycan",
+        "name": "ProTeam",
+        "leader_name": "yerlan.a",
         "projects": [
             {
                 "id": 1,
-                "name": "Nova",
+                "name": "2011_Mercury_BI",
                 "stage": [
                     {
                         "id": 1,
-                        "name": "Анализ и планирование",
-                        "is_done": true,
-                        "days": 10,
+                        "status": 2,
+                        "days": 33,
                         "steps": [
                             {
                                 "id": 1,
-                                "name": "Определение требований aaaa",
-                                "checked": true
+                                "name": "Внести проект в реестр",
+                                "checked": 1
                             },
                             {
                                 "id": 2,
-                                "name": "Диагностика текущей IT-инфраструктуры",
-                                "checked": true
+                                "name": "Создать канал проекта",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Скопировать MF",
+                                "checked": 0
+                            },
+                            {
+                                "id": 4,
+                                "name": "Заполнить матрицу в MF",
+                                "checked": 0
+                            },
+                            {
+                                "id": 5,
+                                "name": "Письмо клиенту",
+                                "checked": 1
                             }
                         ]
                     },
                     {
                         "id": 2,
-                        "name": "Моделирование",
-                        "is_done": true,
-                        "days": 5,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Моделирование данных",
-                                "checked": false
-                            },
-                            {
-                                "id": 2,
-                                "name": "Разработка макетов визуализации",
-                                "checked": false
-                            }
-                        ]
-                    },
-                    {
-                        "id": 3,
-                        "name": "Разработка и запуск",
-                        "is_done": false,
-                        "days": 15,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Разработка процессов ETL",
-                                "checked": true
-                            },
-                            {
-                                "id": 2,
-                                "name": "Разработка дашбордов",
-                                "checked": true
-                            },
-                            {
-                                "id": 3,
-                                "name": "Тестирование и запуск",
-                                "checked": true
-                            }
-                        ]
-                    },
-                    {
-                        "id": 4,
-                        "name": "Разработка и запуск",
-                        "is_done": false,
-                        "days": 1,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Разработка процессов ETL",
-                                "checked": true
-                            },
-                            {
-                                "id": 2,
-                                "name": "Разработка дашбордов",
-                                "checked": true
-                            },
-                            {
-                                "id": 3,
-                                "name": "Тестирование и запуск",
-                                "checked": true
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "Bbnura",
-                "stage": [
-                    {
-                        "id": 1,
-                        "name": "Анализ и планирование",
-                        "is_done": true,
-                        "days": 10,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Определение требований к отчетам",
-                                "checked": true
-                            },
-                            {
-                                "id": 2,
-                                "name": "Диагностика текущей IT-инфраструктуры",
-                                "checked": true
-                            }
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "name": "Моделирование",
-                        "is_done": false,
-                        "days": 5,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Моделирование данных",
-                                "checked": true
-                            },
-                            {
-                                "id": 2,
-                                "name": "Разработка макетов визуализации",
-                                "checked": true
-                            }
-                        ]
-                    },
-                    {
-                        "id": 3,
-                        "name": "Разработка и запуск",
-                        "is_done": false,
-                        "days": 15,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Разработка процессов ETL",
-                                "checked": true
-                            },
-                            {
-                                "id": 2,
-                                "name": "Разработка дашбордов",
-                                "checked": true
-                            },
-                            {
-                                "id": 3,
-                                "name": "Тестирование и запуск",
-                                "checked": true
-                            }
-                        ]
-                    },
-                    {
-                        "id": 4,
-                        "name": "Разработка и запуск",
-                        "is_done": false,
+                        "status": 0,
                         "days": 0,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Разработка процессов ETL",
-                                "checked": true
-                            },
-                            {
-                                "id": 2,
-                                "name": "Разработка дашбордов",
-                                "checked": true
-                            },
-                            {
-                                "id": 3,
-                                "name": "Тестирование и запуск",
-                                "checked": true
-                            }
-                        ]
+                        "steps": 0
+                    },
+                    {
+                        "id": 3,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 4,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
                     }
                 ]
             }
@@ -183,143 +70,189 @@
     },
     {
         "id": 2,
-        "name": "Aidos",
+        "name": "Taycan",
+        "leader_name": "adilet.m",
         "projects": [
             {
-                "id": 3,
-                "name": "Damu",
+                "id": 1,
+                "name": "2103_BBnura_BI",
                 "stage": [
                     {
                         "id": 1,
-                        "name": "Анализ и планирование",
-                        "is_done": true,
-                        "days": 3,
+                        "status": 1,
+                        "days": 25,
                         "steps": [
                             {
                                 "id": 1,
-                                "name": "Архитектура системы",
-                                "checked": true
+                                "name": "Внести проект в реестр",
+                                "checked": 1
                             },
                             {
                                 "id": 2,
-                                "name": "План проекта",
-                                "checked": true
+                                "name": "Создать канал проекта",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Скопировать MF",
+                                "checked": 0
+                            },
+                            {
+                                "id": 4,
+                                "name": "Заполнить матрицу в MF",
+                                "checked": 0
+                            },
+                            {
+                                "id": 5,
+                                "name": "Письмо клиенту",
+                                "checked": 1
                             }
                         ]
                     },
                     {
                         "id": 2,
-                        "name": "Интеграция",
-                        "is_done": false,
-                        "days": 5,
+                        "status": 2,
+                        "days": 17,
                         "steps": [
                             {
                                 "id": 1,
-                                "name": "Получение данных из СЭД Документолог",
-                                "checked": true
+                                "name": "Прототип",
+                                "checked": 1
                             },
                             {
                                 "id": 2,
-                                "name": "Получение данных из bpm online sales",
-                                "checked": true
+                                "name": "Доступ",
+                                "checked": 1
                             },
                             {
                                 "id": 3,
-                                "name": "Получение данных из excel",
-                                "checked": true
+                                "name": "Боевой отчет 70%",
+                                "checked": 0
+                            },
+                            {
+                                "id": 4,
+                                "name": "Модель данных 70%",
+                                "checked": 0
+                            },
+                            {
+                                "id": 5,
+                                "name": "Первичное согласование 40%",
+                                "checked": 0
                             }
                         ]
                     },
                     {
                         "id": 3,
-                        "name": "Хранилище данных",
-                        "is_done": false,
-                        "days": 15,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Организация ХД",
-                                "checked": true
-                            }
-                        ]
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
                     },
                     {
                         "id": 4,
-                        "name": "RESTful-сервис",
-                        "is_done": false,
-                        "days": 5,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Реализация интеграции ХД для выгрузки информации",
-                                "checked": true
-                            }
-                        ]
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Теперь не точка",
+        "leader_name": "anel.a",
+        "projects": [
             {
-                "id": 4,
-                "name": "Samruk",
+                "id": 1,
+                "name": "2104_Viled Home_BI",
                 "stage": [
                     {
                         "id": 1,
-                        "name": "Анализ и планирование",
-                        "is_done": false,
-                        "days": 5,
+                        "status": 1,
+                        "days": 14,
                         "steps": [
                             {
                                 "id": 1,
-                                "name": "Определение требований к отчетам",
-                                "checked": true
+                                "name": "Внести проект в реестр",
+                                "checked": 1
                             },
                             {
                                 "id": 2,
-                                "name": "Диагностика текущей IT-инфраструктуры",
-                                "checked": true
+                                "name": "Создать канал проекта",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Скопировать MF",
+                                "checked": 0
+                            },
+                            {
+                                "id": 4,
+                                "name": "Заполнить матрицу в MF",
+                                "checked": 0
+                            },
+                            {
+                                "id": 5,
+                                "name": "Письмо клиенту",
+                                "checked": 1
                             }
                         ]
                     },
                     {
                         "id": 2,
-                        "name": "Моделирование",
-                        "is_done": false,
-                        "days": 5,
+                        "status": 2,
+                        "days": 13,
                         "steps": [
                             {
                                 "id": 1,
-                                "name": "Моделирование данных",
-                                "checked": true
+                                "name": "Прототип",
+                                "checked": 1
                             },
                             {
                                 "id": 2,
-                                "name": "Разработка макетов визуализации",
-                                "checked": true
+                                "name": "Доступ",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Боевой отчет 70%",
+                                "checked": 0
+                            },
+                            {
+                                "id": 4,
+                                "name": "Модель данных 70%",
+                                "checked": 0
+                            },
+                            {
+                                "id": 5,
+                                "name": "Первичное согласование 40%",
+                                "checked": 0
                             }
                         ]
                     },
                     {
                         "id": 3,
-                        "name": "Разработка и запуск",
-                        "is_done": false,
-                        "days": 15,
-                        "steps": [
-                            {
-                                "id": 1,
-                                "name": "Разработка процессов ETL",
-                                "checked": true
-                            },
-                            {
-                                "id": 2,
-                                "name": "Разработка дашбордов",
-                                "checked": true
-                            },
-                            {
-                                "id": 3,
-                                "name": "Тестирование и запуск",
-                                "checked": true
-                            }
-                        ]
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 4,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
                     }
                 ]
             }

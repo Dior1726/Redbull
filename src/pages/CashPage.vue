@@ -28,12 +28,12 @@
                       <q-avatar size="24px" icon="fab fa-kaggle" color="red" text-color="white" />
                     </q-item-section>
 
-                    <q-item-section style="font-weight: 600; font-size: 14px;">
+                    <q-item-section style="color: #333; font-weight: 500;">
                       {{child.name}}
                     </q-item-section>
 
-                    <q-item-section side style="font-weight: 600; font-size: 14px; color: #333">
-                      {{child.amount}}
+                    <q-item-section side style="font-weight: 600;color: #333">
+                      {{child.amount.toLocaleString()}}
                     </q-item-section>
                   </template>
 
@@ -48,6 +48,7 @@
                         :data="child.discharge"
                         :columns="columns"
                         row-key="name"
+                        :rows-per-page-options="[10]"
                       >
                         <template v-slot:body="props">
                           <q-tr :props="props">
@@ -57,13 +58,13 @@
 
                             <q-td key="amount" :props="props">
                               <p v-if="props.row.type == 'income'" class="text-red">
-                                - {{ props.row.amount }}
+                                {{ Number(props.row.amount).toLocaleString() }}
                               </p>
                               <p v-else-if="props.row.type == 'outcome'" class="text-green">
-                                + {{ props.row.amount }}
+                                {{ Number(props.row.amount).toLocaleString() }}
                               </p>
-                              <p v-else class="text-dark text-weight-medium">
-                                {{ props.row.amount }}
+                              <p v-else-if="props.row.type == 'old'" class="text-dark text-weight-medium">
+                                {{ Number(props.row.amount).toLocaleString() }}
                               </p>
                             </q-td>
                           </q-tr>
@@ -142,6 +143,10 @@ import cash from 'src/static/cash1.json'
 
 .q-table p {
   margin: 0;
+}
+
+.q-table tbody td {
+  white-space: normal;
 }
 
 // .q-expansion-item {

@@ -22,16 +22,16 @@
         :name="stage.id"
         title=""
         :caption="stage.days + ''"
-        icon="uil-angry"
-        done-icon="uil-smile"
-        :done="stage.is_done"
-        :header-nav="stage.is_done"
+        icon="uil-lock-alt"
+        done-icon="uil-check"
+        :done="stage.status == 1 || stage.status == 2"
+        :header-nav="stage.status == 1 || stage.status == 2"
         v-show="showStep"
       >
         <q-checkbox 
           v-for="step in stage.steps" 
           :key="step.id" 
-          :value="step.checked"
+          :value="step.checked == 1"
           :label="step.name" 
           color="accent"
         />
@@ -52,16 +52,26 @@
     props: ['project'],
     data () {
       return {
-        step: 1,
+        step: null,
         showStep: false
       }
     } ,
     mounted() {
-      
+      this.currentStep()
     },
     methods: {
       showStepContent() {
-          this.showStep = !this.showStep
+        this.showStep = !this.showStep
+      },
+      currentStep() {
+        if(this.project) {
+          this.project.stage.forEach(element => {
+            if(element.status == 2) {
+              let stepIndex = this.project.stage.indexOf(element)
+              this.step = stepIndex + 1
+            }
+          })
+        }
       }
     }
   }
@@ -82,6 +92,8 @@
     }
     .q-stepper__step-inner {
       padding: 12px 12px 12px 24px;
+      display: flex;
+      flex-direction: column;
       .q-checkbox__bg {
         width: 24px;
         height: 24px;

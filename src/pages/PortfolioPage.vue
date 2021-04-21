@@ -46,15 +46,6 @@ import Stepper from 'src/components/ui/Stepper.vue'
       ports: portfolioData,
       tab: 'report',
       clickId: false,
-      step: 1,
-      group: ['bat', 'friend', 'upload'],
-      options: [
-        { label: 'Battery too low', value: 'bat' },
-        { label: 'Friend request', value: 'friend', },
-        { label: 'Picture uploaded', value: 'upload', },
-        { label: 'Picture ', value: 'up', },
-        { label: 'Picture as', value: 'pd', },
-      ]
     }),
     components: {
       Stepper

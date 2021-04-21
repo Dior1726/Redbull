@@ -69,12 +69,18 @@ export default {
           opacity: 1
         },
         legend: {
+          show: true,
           position: 'bottom',
+          horizontalAlign: 'left',
           offsetX: 0,
           offsetY: 100,
           labels: {
             colors: '#000'
-          }
+          },
+          itemMargin: {
+            horizontal: 10,
+            vertical: 5
+          },
         },
         grid: {
           show: false

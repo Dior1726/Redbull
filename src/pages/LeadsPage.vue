@@ -1,13 +1,13 @@
 <template>
-  <q-page >
+  <q-page class="">
     <q-tabs
       class="full-width bg-accent-light text-white"
       v-model="tab"
       align="justify"
     >
       <q-tab
-        label="Graphics"
-        name="graphics"
+        label="Report"
+        name="report"
         no-caps
       />
       <q-tab
@@ -18,21 +18,12 @@
     </q-tabs>
     <div class="">
       <q-tab-panels v-model="tab" animated>
-          <q-tab-panel name="graphics">
-            <div class="row q-col-gutter-md q-pa-xs">
+          <q-tab-panel name="report">
 
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <card-base>
-                  <apex-simple-pie-chart></apex-simple-pie-chart>
-                </card-base>
-              </div>
-
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <card-base>
-                  <apex-column-with-data-labels />
-                </card-base>
-              </div>
-
+            <div v-for="team in leads" :key="team.id" class="q-mb-lg">
+              <div class="q-mt-sm q-mb-md" style="font-weight: 600; font-size: 18px;"> {{team.name}} </div>
+              <stepper v-for="project in team.projects" :project="project" :key="project.id">
+              </stepper>
             </div>
           </q-tab-panel>
 
@@ -46,22 +37,30 @@
 </template>
 
 <script>
-import CardBase from 'components/CardBase'
-import ApexColumnWithDataLabels from 'src/components/ApexColumnWithDataLabels.vue'
-import ApexSimplePieChart from "components/ApexSimplePieChart"
 
+import leadsData from "src/static/leads.json"
+import Stepper from 'src/components/ui/Stepper.vue'
 
   export default {
     data: () => ({
-      tab: 'graphics'
+      leads: leadsData,
+      tab: 'report',
+      clickId: false,
+      step: 1
     }),
     components: {
-      CardBase, ApexColumnWithDataLabels,
-      ApexSimplePieChart
+      Stepper
+    },
+   
+    methods: {
+      
+    },
+    mounted() {
+      
     }
   }
 </script>
 
 <style lang="scss" scoped>
-
+  
 </style>

@@ -2,7 +2,7 @@
 
 // bg & text colors
 .bg-accent-light {
-    background-color: $accentdark;
+    background-color: $accentdark !important;
 }
 
 .text-accent-light {
@@ -24,6 +24,7 @@ header .q-toolbar {
 
 main {
     min-height: 100vh;
+    height: 100%;
     background: $bg-light;
 }
 

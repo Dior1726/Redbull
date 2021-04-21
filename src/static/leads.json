@@ -1,0 +1,573 @@
+[
+    {
+        "id": 1,
+        "name": "ProTeam",
+        "leader_name": "yerlan.a",
+        "projects": [
+            {
+                "id": 1,
+                "name": "2103_Akmolastroy",
+                "stage": [
+                    {
+                        "id": 1,
+                        "status": 1,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Отправка брифа",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Диалог",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Анализ и выбор команды",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "status": 1,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Внести клиента и лид в реестр",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Создать папки клиента и лида в команде Продажи",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Создать Metafile(MF)",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "--> КП",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "status": 2,
+                        "days": 34,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Подписать НДА",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Экспресс диагностика",
+                                "checked": 0
+                            },
+                            {
+                                "id": 3,
+                                "name": "Создать КП",
+                                "checked": 0
+                            },
+                            {
+                                "id": 4,
+                                "name": "Отправить КП",
+                                "checked": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "2103_Montazhnik",
+                "stage": [
+                    {
+                        "id": 1,
+                        "status": 1,
+                        "days": 14,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Отправка брифа",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Диалог",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Анализ и выбор команды",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "--> Запуск",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "status": 1,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Внести клиента и лид в реестр",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Создать папки клиента и лида в команде Продажи",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Создать Metafile(MF)",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "--> КП",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "status": 2,
+                        "days": 26,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Подписать НДА",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Экспресс диагностика",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Создать КП",
+                                "checked": 0
+                            },
+                            {
+                                "id": 4,
+                                "name": "Отправить КП",
+                                "checked": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "2104_Master",
+                "stage": [
+                    {
+                        "id": 1,
+                        "status": 1,
+                        "days": 14,
+                        "steps": [
+                            {
+                                "id": 2,
+                                "name": "Диалог",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Анализ и выбор команды",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "--> Запуск",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "status": 1,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Внести клиента и лид в реестр",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Создать папки клиента и лида в команде Продажи",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Создать Metafile(MF)",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "--> КП",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "status": 2,
+                        "days": 8,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Экспресс диагностика",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Создать КП",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Отправить КП",
+                                "checked": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Tornado",
+        "leader_name": "galym.b",
+        "projects": [
+            {
+                "id": 1,
+                "name": "2102_SKK",
+                "stage": [
+                    {
+                        "id": 1,
+                        "status": 1,
+                        "days": 2,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Диалог",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Анализ и выбор команды",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "status": 1,
+                        "days": 63,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "--> Запуск",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Внести клиента и лид в реестр",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Создать папки клиента и лида в команде Продажи",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "Создать Metafile(MF)",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "status": 2,
+                        "days": 68,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "--> КП",
+                                "checked": 0
+                            },
+                            {
+                                "id": 2,
+                                "name": "Создать КП",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Отправить КП",
+                                "checked": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "status": 0,
+                        "days": 68,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Переговоры",
+                                "checked": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "2103_Ecoton",
+                "stage": [
+                    {
+                        "id": 1,
+                        "status": 1,
+                        "days": 21,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Диалог",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Анализ и выбор команды",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Отправка брифа",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "status": 1,
+                        "days": 21,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Создать папки клиента и лида в команде Продажи",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "--> Запуск",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Внести клиента и лид в реестр",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "Создать Metafile(MF)",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "status": 1,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Создать папки клиента и лида в команде Продажи",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "--> Запуск",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Внести клиента и лид в реестр",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "Создать Metafile(MF)",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "status": 2,
+                        "days": 22,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Переговоры",
+                                "checked": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "2104_Vi-Ortis",
+                "stage": [
+                    {
+                        "id": 1,
+                        "status": 1,
+                        "days": 9,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Диалог",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Анализ и выбор команды",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "status": 1,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "--> Запуск",
+                                "checked": 1
+                            },
+                            {
+                                "id": 2,
+                                "name": "Внести клиента и лид в реестр",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Создать папки клиента и лида в команде Продажи",
+                                "checked": 1
+                            },
+                            {
+                                "id": 4,
+                                "name": "Создать Metafile(MF)",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "status": 1,
+                        "days": 0,
+                        "steps": [
+                            {
+                                "id": 2,
+                                "name": "Создать КП",
+                                "checked": 1
+                            },
+                            {
+                                "id": 3,
+                                "name": "Отправить КП",
+                                "checked": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "status": 2,
+                        "days": 14,
+                        "steps": [
+                            {
+                                "id": 1,
+                                "name": "Переговоры",
+                                "checked": 0
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "status": 0,
+                        "days": 0,
+                        "steps": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

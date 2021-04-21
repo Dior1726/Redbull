@@ -5,63 +5,81 @@
         "cashboxex": [
             {
                 "id": 1,
-                "name": "Kaspi USD *9720",
-                "amount": 15000,
+                "name": "БЦК *1903",
+                "amount": 2116390,
                 "discharge": [
                     {
                         "id": 1,
-                        "name": "Ремонт",
+                        "name": "Обмен валюты",
                         "type": "outcome",
-                        "amount": "5000" 
+                        "amount": "430390" 
                     },
                     {
                         "id": 2,
-                        "name": "оплата",
-                        "type": "outcome",
-                        "amount": "5000" 
-                    },
-                    {
-                        "id": 3,
-                        "name": "Куплено",
+                        "name": "Обмен валюты",
                         "type": "income",
-                        "amount": "50000" 
+                        "amount": "20681" 
                     },
                     {
                         "id": 4,
-                        "name": "7 days before",
+                        "name": "Баланс 7 дней назад",
                         "type": "old",
-                        "amount": "5000" 
+                        "amount": "2526099" 
                     }
                 ]
             },
             {
                 "id": 2,
-                "name": "BCC KZT *7890",
-                "amount": 2000,
+                "name": "БЦК *2388",
+                "amount": 254886,
                 "discharge": [
                     {
                         "id": 1,
-                        "name": "Ремонт",
+                        "name": "Реализация работ и услуг",
                         "type": "outcome",
-                        "amount": "5000" 
+                        "amount": "150000" 
                     },
                     {
                         "id": 2,
-                        "name": "оплата",
-                        "type": "outcome",
-                        "amount": "5000" 
+                        "name": "Комиссия банка",
+                        "type": "income",
+                        "amount": "350" 
                     },
                     {
                         "id": 3,
-                        "name": "Куплено",
-                        "type": "income",
-                        "amount": "50000" 
+                        "name": "Обмен валюты (покупка)",
+                        "type": "outcome",
+                        "amount": "428000" 
                     },
                     {
                         "id": 4,
-                        "name": "7 days before",
+                        "name": "Подотчет",
+                        "type": "income",
+                        "amount": "200000" 
+                    },
+                    {
+                        "id": 5,
+                        "name": "Реализация работ и услуг",
+                        "type": "outcome",
+                        "amount": "75000" 
+                    },
+                    {
+                        "id": 6,
+                        "name": "Комиссия банка",
+                        "type": "income",
+                        "amount": "350" 
+                    },
+                    {
+                        "id": 7,
+                        "name": "Расчеты с поставщиками и подрядчиками",
+                        "type": "income",
+                        "amount": "1919999" 
+                    },
+                    {
+                        "id": 8,
+                        "name": "Баланс 7 дней назад",
                         "type": "old",
-                        "amount": "5000" 
+                        "amount": "1722585" 
                     }
                 ]
             }
@@ -73,63 +91,20 @@
         "cashboxex": [
             {
                 "id": 1,
-                "name": "Kaspi USD *8820",
-                "amount": 20000,
+                "name": "БЦК *8749",
+                "amount": 16554160,
                 "discharge": [
                     {
                         "id": 1,
-                        "name": "Ремонт",
-                        "type": "outcome",
-                        "amount": "5000" 
-                    },
-                    {
-                        "id": 2,
-                        "name": "оплата",
-                        "type": "outcome",
-                        "amount": "5000" 
-                    },
-                    {
-                        "id": 3,
-                        "name": "Куплено",
+                        "name": "движений не было",
                         "type": "income",
-                        "amount": "50000" 
+                        "amount": "90000" 
                     },
                     {
                         "id": 4,
-                        "name": "7 days before",
+                        "name": "Баланс 7 дней назад",
                         "type": "old",
-                        "amount": "5000" 
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "name": "BCC KZT *5550",
-                "amount": 80000,
-                "discharge": [
-                    {
-                        "id": 1,
-                        "name": "Ремонт",
-                        "type": "outcome",
-                        "amount": "5000" 
-                    },
-                    {
-                        "id": 2,
-                        "name": "оплата",
-                        "type": "outcome",
-                        "amount": "5000" 
-                    },
-                    {
-                        "id": 3,
-                        "name": "Куплено",
-                        "type": "income",
-                        "amount": "50000" 
-                    },
-                    {
-                        "id": 4,
-                        "name": "7 days before",
-                        "type": "old",
-                        "amount": "5000" 
+                        "amount": "16644160" 
                     }
                 ]
             }
@@ -137,67 +112,103 @@
     },
     {
         "id": 3,
-        "name": "ANother",
+        "name": "Lab",
         "cashboxex": [
             {
                 "id": 1,
-                "name": "Kaspi USD *8820",
-                "amount": 1000,
+                "name": "БЦК 2",
+                "amount": 11036,
                 "discharge": [
                     {
                         "id": 1,
-                        "name": "Ремонт",
-                        "type": "outcome",
-                        "amount": "5000" 
+                        "name": "Комиссия банка",
+                        "type": "income",
+                        "amount": "350" 
                     },
                     {
                         "id": 2,
-                        "name": "оплата",
-                        "type": "outcome",
-                        "amount": "5000" 
+                        "name": "Выплата заработной платы",
+                        "type": "income",
+                        "amount": "20000" 
                     },
                     {
                         "id": 3,
-                        "name": "Куплено",
+                        "name": "Расчеты с поставщиками и подрядчиками",
                         "type": "income",
-                        "amount": "50000" 
+                        "amount": "400000" 
                     },
                     {
                         "id": 4,
-                        "name": "7 days before",
+                        "name": "Комиссия банка",
+                        "type": "income",
+                        "amount": "350" 
+                    },
+                    {
+                        "id": 5,
+                        "name": "Поступление денежных средств с расчетного счета",
+                        "type": "income",
+                        "amount": "100000" 
+                    },
+                    {
+                        "id": 6,
+                        "name": "Баланс 7 дней назад",
                         "type": "old",
-                        "amount": "5000" 
+                        "amount": "531736" 
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "ИП Dana",
+        "cashboxex": [
             {
-                "id": 2,
-                "name": "BCC KZT *5550",
-                "amount": 900,
+                "id": 1,
+                "name": "БЦК *8131",
+                "amount": 3989,
                 "discharge": [
                     {
                         "id": 1,
-                        "name": "Ремонт",
-                        "type": "outcome",
-                        "amount": "5000" 
+                        "name": "Доходы индвидуального предпринимателя",
+                        "type": "income",
+                        "amount": "90000" 
                     },
                     {
                         "id": 2,
-                        "name": "оплата",
+                        "name": "Реализация работ и услуг",
                         "type": "outcome",
-                        "amount": "5000" 
+                        "amount": "400000" 
                     },
                     {
                         "id": 3,
-                        "name": "Куплено",
+                        "name": "Расчеты с поставщиками и подрядчиками",
                         "type": "income",
-                        "amount": "50000" 
+                        "amount": "3970" 
                     },
                     {
                         "id": 4,
-                        "name": "7 days before",
+                        "name": "Комиссия банка",
+                        "type": "income",
+                        "amount": "350" 
+                    },
+                    {
+                        "id": 5,
+                        "name": "Погашение займов",
+                        "type": "income",
+                        "amount": "266742" 
+                    },
+                    {
+                        "id": 7,
+                        "name": "Погашение займов",
+                        "type": "income",
+                        "amount": "41091" 
+                    },
+                    {
+                        "id": 6,
+                        "name": "Баланс 7 дней назад",
                         "type": "old",
-                        "amount": "5000" 
+                        "amount": "6142" 
                     }
                 ]
             }
