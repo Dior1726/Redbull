@@ -11,13 +11,13 @@
                     {
                         "id": 1,
                         "name": "Обмен валюты",
-                        "type": "outcome",
+                        "type": "income",
                         "amount": "430390" 
                     },
                     {
                         "id": 2,
                         "name": "Обмен валюты",
-                        "type": "income",
+                        "type": "outcome",
                         "amount": "20681" 
                     },
                     {
