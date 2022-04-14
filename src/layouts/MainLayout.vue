@@ -159,7 +159,7 @@ export default {
       return this.$t(this.$route.name);
     }
   },
-   watch: {
+  watch: {
     lang(lang) {
       this.$i18n.locale = lang
     }
